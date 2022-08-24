@@ -25,7 +25,7 @@ export const Text = styled.p`
     font-weight: 400;
     line-height:1.4;
     margin-bottom: 14px;
-`
+    `
 export const DimText = styled(Text)`
     margin-top:5px;
     color:#90a4ae;
@@ -65,6 +65,7 @@ body,h1,h2,h3,h4,h5,figure,picture,p,div,a{margin: 0;padding: 0;}
 body{line-height: 1.5; min-height: 100vh;  font-family: 'Barlow Condensed';color:#37474f;} 
 /* ! pictures and images */
 img,picture{max-width:100%;display: block;}
+a{text-decoration:none; color:#1565c0;}
 /* ! buttons, inputs fields, selections */
 input,button,select,a{font:inherit;}
 @media(prefers-reduced-motion:reduced){
