@@ -1,15 +1,9 @@
-import Header from "./Components/Header"
-import Projects from "./Components/Projects"
-import Footer from "./Components/Footer"
+import Page from "./Components/Page"
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <Projects />
-      <Footer/>
-    </>
+        <Page />
   )
 }
 
