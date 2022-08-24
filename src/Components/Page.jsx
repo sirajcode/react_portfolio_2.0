@@ -28,7 +28,7 @@ const Header = () => {
       <Title>{title}</Title>
       <Text>{text}</Text>
       <HeaderMain />
-      <LinkText>{linktext}</LinkText><Arrow>↓</Arrow>
+      <LinkText>{linktext}<Arrow>↓</Arrow></LinkText>
     </HeaderMain>
   );
 }
@@ -64,10 +64,22 @@ const Footer = () => {
 const HeaderMain = styled.div`
   margin-top:90px;
   width:85%;
+  @media (max-width:748px){
+     width:95%;
+  }
+  @media (max-width:512px){
+     width:100%;
+  }
 `
 const Main = styled.div`
   margin-top:90px;
   width:60%;
+  @media (max-width:748px){
+     width:75%;
+  }
+  @media (max-width:512px){
+    width:95%;
+  }
 `
 const FooterMain = styled.div`
   margin-top: 90px;
@@ -75,14 +87,14 @@ const FooterMain = styled.div`
 `
 const blink = keyframes`
   0% {
-    opacity:0.3;
+      opacity: 0.3;
   }
 
   100%{
-    opacity: 0.9;
+     opacity:0.9;
   }
 `;
 const Arrow = styled.span`
   margin-left : 10px;
-  animation: ${blink} 1s ease  infinite;
+  animation: ${blink} 0.9s ease  infinite;
 `

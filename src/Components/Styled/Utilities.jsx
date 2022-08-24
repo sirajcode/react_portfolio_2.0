@@ -4,8 +4,13 @@ import { createGlobalStyle } from "styled-components";
 export const Container = styled.div`
     padding:0 20%;
     margin: 0 auto;
+    @media (max-width:748px){
+     padding:0 10%;
+    }
+    @media (max-width:512px){
+      padding:0 7%;
+    }
 `
-
 export const Title = styled.h1`
     font-family: 'Playfair Display';
     font-size: 48px;
