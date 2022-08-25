@@ -1,8 +1,8 @@
 
 
 export const HeaderData = {
-    title: `Hi, i am siraj.`,
-    text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries`,
+    title: `Hi there, i am siraj.`,
+    text: `A frontend developer and design system engineer. have more than 2 year of experience in creating design system for web and frontend web development. i use javascript/react js/html/css/bootstrap/tailwind css for crafting beautifull designs`,
     linktext: `CHECKOUT SOME OF MY WORK `
 };
 
@@ -10,7 +10,7 @@ export const HeaderData = {
 
 export const ProjectsData = [{
     id: 1,
-    heading: `Simple Accounts`,
+    heading: `Land`,
     description: `1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
     link1: 'https://github.com/sirajofcl/React-portfolio',
     link2: 'https://siraj-portfolio.herokuapp.com/',
