@@ -20,29 +20,21 @@ export const HeaderMain = styled.div`
      width:100%;
   }
 `
-
-
-
-
-
-
-
-
-
-
-
-
 export const SuperMain = styled.div`
-display:flex;
 margin-top:100px;
-img{
-  width: 50%;
-}
 `
 export const Main = styled.div`
-  padding:20px;
-  background-color: #4d4d4d;
-  margin-top:90px;
+
+  display: grid;
+  grid-template-columns: repeat(auto - fill, minmax(300px, 1fr));
+  grid-gap: .5rem;
+
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 44rem;
+
+ 
   @media (max-width:748px){
      width:75%;
   }
@@ -55,7 +47,12 @@ export const Main = styled.div`
 
 
 
-
+// column__list {
+// display: grid;
+// grid - template - columns: repeat(auto - fill, minmax(260px, 1fr));
+// grid - gap: .5rem;
+// align - items: flex - start;
+// }
 
 
 

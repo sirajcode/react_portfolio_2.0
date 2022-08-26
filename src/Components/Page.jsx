@@ -1,7 +1,7 @@
 import React from "react"
-import { Title, Text, Container, Heading, LinkText, DimText, Arrow, Main, FooterMain, HeaderMain, SuperMain } from "./Styled/Utilities";
+import { Title, Text, Container, Heading, LinkText, DimText, Arrow,  FooterMain, HeaderMain, SuperMain } from "./Styled/Utilities";
 import { HeaderData, ProjectsData, FooterTitle, Links } from './PageData';
-import Cover from './Styled/cover.jpg'
+import styled from "styled-components";
 
 const Page = () => {
   return (
@@ -32,15 +32,12 @@ const { title, text, linktext } = HeaderData;
 
 const Projects = () => {
 const Project = ProjectsData.map((data) =>
-  <SuperMain>
-    <img src={Cover} alt="projectimage" />
     <Main key={data.id}>
       <Heading >{data.heading}</Heading>
       <Text>{data.description}</Text>
       <LinkText> <a href={data.link1} target="_blank" >CODE</a> | <a href={data.link2} target="_blank" >PREVIEW</a>  </LinkText>
       <DimText>{data.tech}</DimText>
     </Main>
-  </SuperMain> 
   );
   return (
       <>{Project}</>
@@ -65,3 +62,16 @@ const Footer = () => {
 
 
 
+const Main = styled.div`
+
+  display: grid;
+  grid-template-columns: repeat(auto - fill, minmax(300px, 1fr));
+  grid-gap: .5rem;
+
+  @media (max-width:748px){
+     width:75%;
+  }
+  @media (max-width:512px){
+    width:95%;
+  }
+`
