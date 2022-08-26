@@ -32,15 +32,15 @@ const { title, text, linktext } = HeaderData;
 
 const Projects = () => {
 const Project = ProjectsData.map((data) =>
-    <SuperMain>
-      <Main key={data.id}>
-        <Heading >{data.heading}</Heading>
-        <Text>{data.description}</Text>
-        <LinkText> <a href={data.link1} target="_blank" >CODE</a> | <a href={data.link2} target="_blank" >PREVIEW</a>  </LinkText>
-        <DimText>{data.tech}</DimText>
-      </Main>
-      <img src={Cover} alt="projectimage" />
-    </SuperMain> 
+  <SuperMain>
+    <img src={Cover} alt="projectimage" />
+    <Main key={data.id}>
+      <Heading >{data.heading}</Heading>
+      <Text>{data.description}</Text>
+      <LinkText> <a href={data.link1} target="_blank" >CODE</a> | <a href={data.link2} target="_blank" >PREVIEW</a>  </LinkText>
+      <DimText>{data.tech}</DimText>
+    </Main>
+  </SuperMain> 
   );
   return (
       <>{Project}</>

@@ -21,20 +21,28 @@ export const HeaderMain = styled.div`
   }
 `
 
+
+
+
+
+
+
+
+
+
+
+
 export const SuperMain = styled.div`
 display:flex;
 margin-top:100px;
 img{
-width:70%;
-height:60%;
+  width: 50%;
 }
 `
 export const Main = styled.div`
   padding:20px;
   background-color: #4d4d4d;
   margin-top:90px;
-  width:60%;
-  
   @media (max-width:748px){
      width:75%;
   }
@@ -42,6 +50,22 @@ export const Main = styled.div`
     width:95%;
   }
 `
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export const FooterMain = styled.div`
   margin-top: 90px;
   margin-bottom: 90px;
