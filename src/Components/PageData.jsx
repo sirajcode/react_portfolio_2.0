@@ -1,7 +1,7 @@
 
 
 export const HeaderData = {
-    title: `Hi there, i am siraj.`,
+    title: `Hi there, this is siraj.  `,
     text: `A frontend developer and design system engineer. have more than 2 year of experience in creating design system for web and frontend web development. i use javascript/react js/html/css/bootstrap/tailwind css for crafting beautifull designs`,
     linktext: `CHECKOUT SOME OF MY WORK `
 };

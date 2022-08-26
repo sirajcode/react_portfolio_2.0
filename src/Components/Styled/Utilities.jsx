@@ -1,8 +1,7 @@
-import styled from "styled-components";
-import { createGlobalStyle } from "styled-components";
+import styled, { keyframes, createGlobalStyle } from "styled-components";
 
 export const Container = styled.div`
-    padding:0 20%;
+    padding:0 10%;
     margin: 0 auto;
     @media (max-width:748px){
      padding:0 10%;
@@ -11,22 +10,66 @@ export const Container = styled.div`
       padding:0 7%;
     }
 `
+
+
+export const HeaderMain = styled.div`
+  margin-top:100px;
+  width:70%;
+  @media (max-width:748px){
+     width:95%;
+  }
+  @media (max-width:512px){
+     width:100%;
+  }
+`
+export const Main = styled.div`
+padding:20px;
+background-color: #98d2ff;
+  border:2px solid  #0078d4;
+  border-radius: 8px;
+  margin-top:90px;
+  width:50%;
+  @media (max-width:748px){
+     width:75%;
+  }
+  @media (max-width:512px){
+    width:95%;
+  }
+`
+export const FooterMain = styled.div`
+  margin-top: 90px;
+  margin-bottom: 90px;
+`
+export const blink = keyframes`
+  0% {
+      opacity: 0.3;
+  }
+
+  100%{
+     opacity:0.9;
+  }
+`;
+export const Arrow = styled.span`
+  margin-left : 10px;
+  animation: ${blink} 0.9s ease  infinite;
+`
+
+
+
 export const Title = styled.h1`
-    font-family: 'Playfair Display';
-    font-size: 48px;
-    font-weight: 400;
+    font-size: 112px;
+    font-weight: 700;
     line-height: 1.1;
-    letter-spacing: 1px;
+    text-transform:uppercase;
      margin-bottom: 28px;
 `
 export const Heading = styled.h2`
-    font-family: 'Playfair Display';
-    font-size: 36px;
-    font-weight: 400;
+    font-size: 34px;
+    font-weight: 600;
     margin-bottom: 18px;
 `
 export const Text = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     line-height:1.4;
     margin-bottom: 14px;
@@ -37,13 +80,11 @@ export const DimText = styled(Text)`
     letter-spacing:1px;
 `
 export const LinkText = styled.p`
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
 
 `
-export const LinkTextSerif = styled(LinkText)`
-    font-family: 'Playfair Display';
-`
+
 
 
 
@@ -67,10 +108,10 @@ export const GlobalStyle = createGlobalStyle`
 /* ! margins */
 body,h1,h2,h3,h4,h5,figure,picture,p,div,a{margin: 0;padding: 0;}
 /* ! setting up body */
-body{line-height: 1.5; min-height: 100vh;  font-family: 'Barlow Condensed';color:#37474f;} 
+body{line-height: 1.5; min-height: 100vh;  font-family: 'Poppins';color:#37474f;} 
 /* ! pictures and images */
 img,picture{max-width:100%;display: block;}
-a{text-decoration:none; color:#1565c0;}
+a{text-decoration:none; color:#0078d4;}
 /* ! buttons, inputs fields, selections */
 input,button,select,a{font:inherit;}
 @media(prefers-reduced-motion:reduced){
