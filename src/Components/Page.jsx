@@ -1,10 +1,10 @@
 import React from "react"
 import { Title, Text, Container, Heading, LinkText, DimText, Arrow, Main, FooterMain, HeaderMain, SuperMain } from "./Styled/Utilities";
-import { HeaderData, ProjectsData, FooterTitle, Links } from './PageData'
+import { HeaderData, ProjectsData, FooterTitle, Links } from './PageData';
+import Cover from './Styled/cover.jpg'
 
 const Page = () => {
   return (
-
     <>
       <Container>
         <Header />
@@ -14,13 +14,11 @@ const Page = () => {
     </>
   )
 }
-
 export default Page
 
 const Header = () => {
 
-
-  const { title, text, linktext } = HeaderData;
+const { title, text, linktext } = HeaderData;
 
   return (
     <HeaderMain>
@@ -33,23 +31,19 @@ const Header = () => {
 }
 
 const Projects = () => {
-
-  const Project = ProjectsData.map((data) =>
-    <>
+const Project = ProjectsData.map((data) =>
+    <SuperMain>
       <Main key={data.id}>
         <Heading >{data.heading}</Heading>
         <Text>{data.description}</Text>
         <LinkText> <a href={data.link1} target="_blank" >CODE</a> | <a href={data.link2} target="_blank" >PREVIEW</a>  </LinkText>
         <DimText>{data.tech}</DimText>
       </Main>
-      <img src="real.jpg" alt="projectimage" />
-    </>
+      <img src={Cover} alt="projectimage" />
+    </SuperMain> 
   );
   return (
-    <SuperMain>
-      {Project}
-    </SuperMain>
-
+      <>{Project}</>
   );
 }
 
