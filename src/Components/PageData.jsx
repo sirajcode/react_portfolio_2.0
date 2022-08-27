@@ -11,34 +11,30 @@ export const HeaderData = {
 export const ProjectsData = [{
     id: 1,
     heading: `Land`,
-    description: `1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
     link1: 'https://github.com/sirajofcl/React-portfolio',
     link2: 'https://siraj-portfolio.herokuapp.com/',
-    tech: `1500s, when an unknown printer took a galley of type`
+    tech: `1500s, when an unknown printer`
 },
 {
     id: 2,
-    heading: `Simple`,
-    description: `1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+    heading: `Simple yeah right`,
     link1: 'https://github.com/sirajofcl/React-portfolio',
     link2: 'https://siraj-portfolio.herokuapp.com/',
-    tech: `1500s, when an unknown printer took a galley of type`
+    tech: `React | Js | Styled Components`
 },
 {
     id: 3,
     heading: `Accounts`,
-    description: `1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
     link1: 'https://github.com/sirajofcl/React-portfolio',
     link2: 'https://siraj-portfolio.herokuapp.com/',
-    tech: `1500s, when an unknown printer took a galley of type`
+    tech: `1500s, when an unknown printer `
 },
 {
     id: 4,
     heading: `Not very Simple`,
-    description: `1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
     link1: 'https://github.com/sirajofcl/React-portfolio',
     link2: 'https://siraj-portfolio.herokuapp.com/',
-    tech: `1500s, when an unknown printer took a galley of type`
+    tech: `1500s, when an unknown printer `
 }];
 
 

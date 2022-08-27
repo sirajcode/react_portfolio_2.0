@@ -1,5 +1,5 @@
 import React from "react"
-import { Title, Text, Container, Heading, LinkText, DimText, Arrow,  FooterMain, HeaderMain, SuperMain } from "./Styled/Utilities";
+import { Title, Text, Container, Heading, LinkText, DimText, Arrow, FooterMain, HeaderMain, } from "./Styled/Utilities";
 import { HeaderData, ProjectsData, FooterTitle, Links } from './PageData';
 import styled from "styled-components";
 
@@ -18,7 +18,7 @@ export default Page
 
 const Header = () => {
 
-const { title, text, linktext } = HeaderData;
+  const { title, text, linktext } = HeaderData;
 
   return (
     <HeaderMain>
@@ -31,16 +31,16 @@ const { title, text, linktext } = HeaderData;
 }
 
 const Projects = () => {
-const Project = ProjectsData.map((data) =>
-    <Main key={data.id}>
-      <Heading >{data.heading}</Heading>
-      <Text>{data.description}</Text>
-      <LinkText> <a href={data.link1} target="_blank" >CODE</a> | <a href={data.link2} target="_blank" >PREVIEW</a>  </LinkText>
-      <DimText>{data.tech}</DimText>
-    </Main>
+  const Project = ProjectsData.map((data) =>
+
+      <Main key={data.id}>
+        <Heading >{data.heading}</Heading>
+        <LinkText> <a href={data.link1} target="_blank" >CODE</a> | <a href={data.link2} target="_blank" >PREVIEW</a>  </LinkText>
+        <DimText>{data.tech}</DimText>
+      </Main>
   );
   return (
-      <>{Project}</>
+    <SuperMain>{Project}</SuperMain>
   );
 }
 
@@ -59,19 +59,20 @@ const Footer = () => {
 
 
 
-
-
-
 const Main = styled.div`
-
+  color: white;
+  border: 2px solid #4d4d4d;
+  padding: 15px;
+ 
+`
+const SuperMain = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto - fill, minmax(300px, 1fr));
-  grid-gap: .5rem;
-
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
   @media (max-width:748px){
-     width:75%;
+  grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width:512px){
-    width:95%;
+@media (max-width:512px){
+  grid-template-columns: repeat(1, 1fr);
   }
 `

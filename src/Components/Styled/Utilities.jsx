@@ -11,8 +11,9 @@ export const Container = styled.div`
     }
 `
 export const HeaderMain = styled.div`
-  margin-top:100px;
+  margin-top:80px;
   width:70%;
+  margin-bottom: 80px;
   @media (max-width:748px){
      width:95%;
   }
@@ -20,46 +21,6 @@ export const HeaderMain = styled.div`
      width:100%;
   }
 `
-export const SuperMain = styled.div`
-margin-top:100px;
-`
-export const Main = styled.div`
-
-  display: grid;
-  grid-template-columns: repeat(auto - fill, minmax(300px, 1fr));
-  grid-gap: .5rem;
-
-  background-color: dodgerblue;
-  color: white;
-  padding: 1rem;
-  height: 44rem;
-
- 
-  @media (max-width:748px){
-     width:75%;
-  }
-  @media (max-width:512px){
-    width:95%;
-  }
-`
-
-
-
-
-
-// column__list {
-// display: grid;
-// grid - template - columns: repeat(auto - fill, minmax(260px, 1fr));
-// grid - gap: .5rem;
-// align - items: flex - start;
-// }
-
-
-
-
-
-
-
 
 
 
@@ -81,39 +42,34 @@ export const Arrow = styled.span`
   animation: ${blink} 0.9s ease  infinite;
 `
 
+//text & Headings
 export const Title = styled.h1`
     font-size: 112px;
     font-weight: 700;
     line-height: 1.1;
     text-transform:uppercase;
-     margin-bottom: 28px;
+    margin-bottom: 28px;
 `
 export const Heading = styled.h2`
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 `
 export const Text = styled.p`
     font-size: 18px;
     font-weight: 400;
     line-height:1.4;
-    margin-bottom: 14px;
     `
 export const DimText = styled(Text)`
-    margin-top:5px;
-    color:#90a4ae;
-    letter-spacing:1px;
+    color:#d4d4d4;
 `
 export const LinkText = styled.p`
     font-size: 18px;
     font-weight: 600;
+    margin-bottom: 5px;
 
 `
-
-
-
-
-
+//Global Styles
 export const GlobalStyle = createGlobalStyle`
 
    *,*:before,*:after{box-sizing: border-box;}
