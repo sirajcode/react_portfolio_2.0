@@ -1,5 +1,6 @@
 import styled, { keyframes, createGlobalStyle } from "styled-components";
 
+//container 
 export const Container = styled.div`
     padding:0 10%;
     margin: 0 auto;
@@ -7,6 +8,9 @@ export const Container = styled.div`
       padding:0 7%;
     }
 `
+//sections
+
+//Header Section
 export const HeaderMain = styled.div`
   margin-top:80px;
   width:77%;
@@ -18,6 +22,7 @@ export const HeaderMain = styled.div`
      width:100%;
   }
 `
+//Projects Sections 
 export const Main = styled.div`
   color: white;
   border: 2px solid #4d4d4d;
@@ -35,15 +40,16 @@ export const SuperMain = styled.div`
   grid-template-columns: repeat(1, 1fr);
   }
 `
+//Footer Section
 export const FooterMain = styled.div`
   margin-top: 90px;
   margin-bottom: 90px;
 `
+//Arrow and Animation
 export const blink = keyframes`
   0% {
       opacity: 0.3;
   }
-
   100%{
      opacity:0.9;
   }
