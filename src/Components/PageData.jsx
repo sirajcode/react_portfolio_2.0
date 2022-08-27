@@ -14,10 +14,10 @@ export const ProjectsData = [{
         icon: <VscFolder size={50} />,
         heading: `React Portfolio 2.0`,
         name1: `CODE `,
-        sep: '',
-        name2: ``,
+        sep: ' | ',
+        name2: `PREVIEW`,
         link1: 'https://github.com/sirajofcl/portfolio-2.0',
-        link2: '',
+        link2: 'https://portfolio-2-0-hazel-one.vercel.app/',
         tech: `React js | Styled-components`
     },
     {
