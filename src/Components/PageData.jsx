@@ -1,4 +1,4 @@
-
+import { VscFolder } from "react-icons/vsc";
 
 export const HeaderData = {
     title: `Hi there, this is siraj.  `,
@@ -10,36 +10,48 @@ export const HeaderData = {
 
 export const ProjectsData = [{
     id: 1,
-    heading: `Land`,
-    link1: 'https://github.com/sirajofcl/React-portfolio',
-    link2: 'https://siraj-portfolio.herokuapp.com/',
-    tech: `1500s, when an unknown printer`
-},
-{
-    id: 2,
-    heading: `Simple yeah right`,
-    link1: 'https://github.com/sirajofcl/React-portfolio',
-    link2: 'https://siraj-portfolio.herokuapp.com/',
-    tech: `React | Js | Styled Components`
-},
-{
-    id: 3,
-    heading: `Accounts`,
+    icon: <VscFolder size={50} />,
+    heading: `Not very Simple`,
+    name1: `CODE `,
+    sep: ' | ',
+    name2: ` PREVIEW`,
     link1: 'https://github.com/sirajofcl/React-portfolio',
     link2: 'https://siraj-portfolio.herokuapp.com/',
     tech: `1500s, when an unknown printer `
 },
+    {
+        id: 2,
+        icon: <VscFolder size={50} />,
+        heading: `Not very Simple`,
+        name1: `CODE `,
+        sep: ' | ',
+        name2: ` PREVIEW`,
+        link1: 'https://github.com/sirajofcl/React-portfolio',
+        link2: 'https://siraj-portfolio.herokuapp.com/',
+        tech: `1500s, when an unknown printer `
+    },
+    {
+        id: 3,
+        icon: <VscFolder size={50} />,
+        heading: `Not very Simple`,
+        name1: `CODE `,
+        sep: ' | ',
+        name2: ` PREVIEW`,
+        link1: 'https://github.com/sirajofcl/React-portfolio',
+        link2: 'https://siraj-portfolio.herokuapp.com/',
+        tech: `1500s, when an unknown printer `
+    },
 {
     id: 4,
+    icon: <VscFolder size={50} />,
     heading: `Not very Simple`,
+    name1: `CODE `,
+    sep: ' | ',
+    name2: ` PREVIEW`,
     link1: 'https://github.com/sirajofcl/React-portfolio',
     link2: 'https://siraj-portfolio.herokuapp.com/',
     tech: `1500s, when an unknown printer `
-}];
-
-
-
-
+},];
 
 export const FooterTitle = `wanna talk?`;
 export const Links = [
