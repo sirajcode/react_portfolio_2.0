@@ -11,7 +11,7 @@ export const HeaderData = {
 //Projects Section
 export const ProjectsData = [{
         id: 1,
-        icon: <VscFolder size={50} />,
+        icon: <VscFolder size={45} />,
         heading: `React Portfolio 2.0`,
         name1: `CODE `,
         sep: ' | ',
@@ -22,7 +22,7 @@ export const ProjectsData = [{
     },
     {
         id: 2,
-        icon: <VscFolder size={50} />,
+        icon: <VscFolder size={45} />,
         heading: `React Portfolio`,
         name1: `CODE `,
         sep: ' | ',
@@ -33,7 +33,7 @@ export const ProjectsData = [{
     },
     {
         id: 3,
-        icon: <VscFolder size={50} />,
+        icon: <VscFolder size={45} />,
         heading: `Product Landing Page`,
         name1: `CODE `,
         sep: ' | ' ,

@@ -73,18 +73,18 @@ export const Title = styled.h1`
     font-size: 68px;
       }
     @media (max-width:512px){
-      font-size: 60px;
+      font-size: 50px;
       }
 `
 export const Heading = styled.h2`
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
      margin-top: 10px;
     color:#d4d4d4;
 `
 export const Text = styled.p`
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height:1.4;
     `
@@ -92,8 +92,8 @@ export const DimText = styled(Text)`
     color:#d4d4d4;
 `
 export const LinkText = styled.p`
-    font-size: 18px;
-    font-weight: 500; 
+    font-size: 16px;
+    font-weight: 600; 
     margin-bottom: 5px;
 
 `
