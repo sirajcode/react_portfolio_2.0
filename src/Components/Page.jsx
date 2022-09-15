@@ -27,12 +27,16 @@ return (
   );
 }
 const Projects = () => {
-const Project = ProjectsData.map(data =>
-  <Main key={data.id}>
-    <DimText>{data.icon}</DimText>
-    <Heading>{data.heading}</Heading>
-    <LinkText><a href={data.link1} target="_blank" >{data.name1}</a>{data.sep}<a href={data.link2} target="_blank" >{data.name2}</a></LinkText>
-    <DimText>{data.tech}</DimText>
+const Project = ProjectsData.map(({id,icon,heading,link1,link2,name1,name2,tech,sep}) =>
+  <Main key={id}>
+    <DimText>{icon}</DimText>
+    <Heading>{heading}</Heading>
+    <LinkText>
+    <a href={link1} target="_blank" >{name1}</a>
+    {sep}
+    <a href={link2} target="_blank" >{name2}</a>
+    </LinkText>
+    <DimText>{tech}</DimText>
   </Main>
 );
 return (
@@ -40,7 +44,7 @@ return (
   );
 }
 const Footer = () => {
-const FooterLinks = Links.map(fdata => (<LinkText key={fdata.id}>[<a href={fdata.link} target="_blank" >{fdata.name}</a>]{fdata.text} </LinkText>));
+const FooterLinks = Links.map(({id,link,name,text}) => (<LinkText key={id}>[<a href={link} target="_blank" >{name}</a>]{text}</LinkText>));
 return (
     <FooterMain>
       <Title>{FooterTitle}</Title>
