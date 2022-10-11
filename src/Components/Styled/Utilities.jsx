@@ -8,12 +8,22 @@ export const Container = styled.div`
       padding:0 7%;
     }
 `
+export const Flex = styled.div`
+    display: flex;
+    justify-content: space-between;
+    img{
+      width:50%;
+    }
+    @media (max-width:512px){
+    flex-direction: column;
+    }
+`
 //sections
 
 //Header Section
 export const HeaderMain = styled.div`
   margin-top:80px;
-  width:77%;
+  width:50%;
   margin-bottom: 80px;
   @media (max-width:748px){
      width:95%;
@@ -21,11 +31,12 @@ export const HeaderMain = styled.div`
   @media (max-width:512px){
      width:100%;
   }
-`
+` 
 //Projects Sections 
 export const Main = styled.div`
   color: white;
   border: 2px solid #4d4d4d;
+  border-radius:7px;
   padding: 15px;
  
 `
@@ -61,26 +72,23 @@ export const Arrow = styled.span`
 
 //text & Headings
 export const Title = styled.h1`
-    font-size: 110px;
+    font-size: 48px;
     font-weight: 700;
     line-height: 1.1;
-    text-transform:uppercase;
     margin-bottom: 28px;
-    @media (max-width:900px){
-    font-size: 80px;
-      }
-    @media (max-width:700px){
-    font-size: 68px;
-      }
-    @media (max-width:512px){
-      font-size: 50px;
-      }
 `
 export const Heading = styled.h2`
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
      margin-top: 10px;
+    color:#d4d4d4;
+`
+export const Head = styled.h2`
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 30px;
     color:#d4d4d4;
 `
 export const Text = styled.p`
@@ -104,7 +112,7 @@ export const GlobalStyle = createGlobalStyle`
 /* ! margins */
 body,h1,h2,h3,h4,h5,figure,picture,p,div,a{margin: 0;padding: 0;}
 /* ! setting up body */
-body{line-height: 1.5; min-height: 100vh;  font-family: 'Poppins';color:#d4d4d4;background-color:#333333;} 
+body{line-height: 1.5; min-height: 100vh;  font-family: 'Poppins'; color:#d4d4d4;background-color:#333333;} 
 /* ! pictures and images */
 img,picture{max-width:100%;display: block;}
 a{text-decoration:none; color:#0078d4;}

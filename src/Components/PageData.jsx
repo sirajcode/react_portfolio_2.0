@@ -13,7 +13,7 @@ export const ProjectsData = [
      {
         id: 1,
         icon: <VscFolder size={45} />,
-        heading: `Design Source, UI Design system`,
+        heading: `Design Source, Design system`,
         name1: `CODE `,
         sep: ' | ' ,
         name2: `PREVIEW`,

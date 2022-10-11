@@ -13,11 +13,11 @@ cd my-app
 npm start
 ```
 
-### Updates
+### Update
 
-All updates about my work and previous experince and news related to me will shown some where on github page or you can check me social media.
+Crruntly i am working on redesign of this page and also working on other directory is about designing of fully functional website will be online soon.
 
-### Creator
+### Author
 
 **M. Siraj**
 
