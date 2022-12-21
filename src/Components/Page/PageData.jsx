@@ -2,11 +2,11 @@ import { VscFolder } from "react-icons/vsc";
 
 //Header Section 
 export const HeaderData = {
-    title: `Hi there, this is siraj.  `,
-    text: `Engineering professional familiar with RWD and a firm believer in Mobile - first approach skilled with Javascript and React js.
-    Mostly I use Javascript, React js, Html, CSS, Styled-components, Tailwind, Bootstrap, and Material UI for crafting beautiful user interfaces.`,
-    linktext: `CHECKOUT SOME OF MY WORK `
+    title: `under construction `,
+    text: `coming soon...`,
 };
+
+// Engineering professional familiar with RWD and a firm believer in Mobile - first approach skilled with Javascript and React js.Mostly I use Javascript, React js, Html, CSS, Styled-components, Tailwind, Bootstrap, and Material UI for crafting beautiful user interfaces.
 
 //Projects Section
 export const ProjectsData = [

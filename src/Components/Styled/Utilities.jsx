@@ -1,11 +1,16 @@
 import styled, { keyframes, createGlobalStyle } from "styled-components";
 
+
+// note: 20/12/2022
+// i am going to create a design system for this page
+
+
 //container 
 export const Container = styled.div`
     padding:0 10%;
     margin: 0 auto;
     @media (max-width:512px){
-      padding:0 7%;
+    padding:0 7%;
     }
 `
 export const Flex = styled.div`
@@ -19,7 +24,6 @@ export const Flex = styled.div`
     }
 `
 //sections
-
 //Header Section
 export const HeaderMain = styled.div`
   margin-top:80px;
@@ -38,7 +42,6 @@ export const Main = styled.div`
   border: 2px solid #4d4d4d;
   border-radius:7px;
   padding: 15px;
- 
 `
 export const SuperMain = styled.div`
   display: grid;
@@ -47,7 +50,7 @@ export const SuperMain = styled.div`
   @media (max-width:748px){
   grid-template-columns: repeat(2, 1fr);
   }
-@media (max-width:512px){
+  @media (max-width:512px){
   grid-template-columns: repeat(1, 1fr);
   }
 `
@@ -72,9 +75,9 @@ export const Arrow = styled.span`
 
 //text & Headings
 export const Title = styled.h1`
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.1;
+    font-size: 60px;
+    font-weight: 400;
+    line-height:1.3;
     margin-bottom: 28px;
 `
 export const Heading = styled.h2`
@@ -82,22 +85,22 @@ export const Heading = styled.h2`
     font-weight: 600;
     margin-bottom: 10px;
      margin-top: 10px;
-    color:#d4d4d4;
+    color:#ffffff;
 `
 export const Head = styled.h2`
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 30px;
     margin-top: 30px;
-    color:#d4d4d4;
+    color:#ffffff;
 `
 export const Text = styled.p`
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 400;
     line-height:1.4;
     `
 export const DimText = styled(Text)`
-    color:#d4d4d4;
+    color:#ffffff;
 `
 export const LinkText = styled.p`
     font-size: 16px;
@@ -105,14 +108,17 @@ export const LinkText = styled.p`
     margin-bottom: 5px;
 
 `
+
+
+
+
 //Global Styles
 export const GlobalStyle = createGlobalStyle`
-
    *,*:before,*:after{box-sizing: border-box;}
 /* ! margins */
 body,h1,h2,h3,h4,h5,figure,picture,p,div,a{margin: 0;padding: 0;}
 /* ! setting up body */
-body{line-height: 1.5; min-height: 100vh;  font-family: 'Poppins'; color:#d4d4d4;background-color:#333333;} 
+body{line-height: 1.5; min-height: 100vh;  font-family: 'VT323'; color:#ffffff;background-color:#262626;} 
 /* ! pictures and images */
 img,picture{max-width:100%;display: block;}
 a{text-decoration:none; color:#0078d4;}
