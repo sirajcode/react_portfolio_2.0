@@ -1,35 +1,62 @@
-import React from "react"
-import { Title, Text, Container, Heading, LinkText, DimText, Arrow, FooterMain, HeaderMain,Main,SuperMain,Flex,Head } from "../Styled/Utilities";
-import { HeaderData, ProjectsData, FooterTitle, Links } from './PageData';
+import React from "react";
+import {Container,Flex,Text,HomeIcon, TerminalIcon,ProfileIcon,Section,Nav} from "../Styled/Utilities";
+import { HeaderData } from './PageData';
 
 const Page = () => {
   return (
     <>
       <Container>
-        <Header />
-         <Projects />
-        <Footer />
+        <Navbar/>
       </Container>
     </>
-
-
   )
 }
 export default Page
 
-const Header = () => {
-const { title, text } = HeaderData;
+
+const Navbar = () => {
   return (
-   <Flex>
-      <HeaderMain>  
-          <Title>{title}</Title>
-          <Text>{text}</Text>
-          <HeaderMain />
-      </HeaderMain>
-      <img src="" />
-      </Flex>
+    <Flex>
+      <Nav>
+        <Section>
+          <HomeIcon/>
+          <Text align='center' transform='uppercase'>Home</Text>
+        </Section>
+        
+        <Section>
+          <TerminalIcon />
+          <Text align='center' transform='uppercase'>Projects</Text>
+        </Section>
+
+        <Section>
+          <ProfileIcon/>
+          <Text align='center' transform='uppercase'>Resume</Text>
+        </Section>
+
+      </Nav>
+
+      <div>
+         <Text fontSize='3'>
+          M. Siraj
+        </Text>
+        <Text fontSize='2' marginTop='-1'>
+          Front-end developer
+        </Text>
+      </div>
+</Flex>
+  
+
   );
 }
+
+
+const Header = () => {
+  return (
+    <>
+    </>
+  );
+}
+
 const Projects = () => {
   return (
     <>    
@@ -37,7 +64,6 @@ const Projects = () => {
    
   );
 }
-
 
 const Footer = () => {
 return (
