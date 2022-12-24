@@ -8,7 +8,7 @@ import { ImHome,ImProfile,ImTerminal } from "react-icons/im";
 export const Container = styled.div`
   padding:3% 10%;
   margin: 0 auto;
-  @media (max-width:512px){
+  @media (max-width:748px){
   padding:3% 7%;
 }
 `
@@ -54,7 +54,7 @@ export const TerminalIcon  = styled(ImTerminal)`
   margin-bottom: 7px;
 `;
 
-
+//About Section
 export const AboutMe = styled.div`
   margin-top:80px;
   display:flex;
@@ -78,16 +78,28 @@ export const AboutMe = styled.div`
   }
 `;
  
-
-
-
-
-
-
-
-
-
-
+//Project Section
+export const Project = styled.div`
+  width: 75%;
+  @media (max-width:748px){
+  width: 100%;
+  }
+`
+//Footer Section
+export const FooterNav = styled.div`
+  display: flex;
+  justify-content: center;
+`
+export const FooterLinks = styled.div`
+  margin-top: 45px;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  color:#59FF85;
+  @media (max-width:748px){
+  width: 70%;
+  }
+`
 
 //text
 export const Text = styled.p`
@@ -160,78 +172,7 @@ margin-right: ${({ marginRight }) => {
       else if(marginRight === '6') return '64px'
   return 'none'
 }};
-
-//padding
-padding: ${({ padding }) => {
-      if(padding === '1') return '2px'
-      else if(padding === '2') return '4px'
-      else if(padding === '3') return '8px'
-      else if(padding === '4') return '16px'
-      else if(padding === '5') return '32px'
-      else if(padding === '6') return '64px'
-  return 'none'
-}}; 
-
-// padding top
-padding-top: ${({ paddingTop }) => {
-      if(paddingTop === '1') return '2px'
-      else if(paddingTop === '2') return '4px'
-      else if(paddingTop === '3') return '8px'
-      else if(paddingTop === '4') return '16px'
-      else if(paddingTop === '5') return '32px'
-      else if(paddingTop === '6') return '64px'
-  return 'none'
-}}; 
-
-//padding bottom
-padding-bottom: ${({ paddingBottom }) => {
-      if(paddingBottom === '1') return '2px'
-      else if(paddingBottom === '2') return '4px'
-      else if(paddingBottom === '3') return '8px'
-      else if(paddingBottom === '4') return '16px'
-      else if(paddingBottom === '5') return '32px'
-      else if(paddingBottom === '6') return '64px'
-  return 'none'
-}}; 
-
-// padding left 
-padding-left: ${({ paddingLeft }) => {
-      if(paddingLeft === '1') return '2px'
-      else if(paddingLeft === '2') return '4px'
-      else if(paddingLeft === '3') return '8px'
-      else if(paddingLeft === '4') return '16px'
-      else if(paddingLeft === '5') return '32px'
-      else if(paddingLeft === '6') return '64px'
-  return 'none'
-}};  
-
-// padding right
-padding-right: ${({ paddingRight }) => {
-      if(paddingRight === '1') return '2px'
-      else if(paddingRight === '2') return '4px'
-      else if(paddingRight === '3') return '8px'
-      else if(paddingRight === '4') return '16px'
-      else if(paddingRight === '5') return '32px'
-      else if(paddingRight === '6') return '64px'
-  return 'none'
-}};
 `
-//sections
-//Header Section
-export const HeaderMain = styled.div`
-  margin-top:80px;
-  width:50%;
-  margin-bottom: 80px;
-  @media (max-width:748px){
-     width:95%;
-  }
-  @media (max-width:512px){
-     width:100%;
-  }
-` 
-//Projects Sections 
-//Footer Section
-
 
 
 //Global Styles
