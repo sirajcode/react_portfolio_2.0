@@ -1,12 +1,27 @@
 import styled, {createGlobalStyle } from "styled-components";
 import { ImHome,ImProfile,ImTerminal } from "react-icons/im";
 
-// updated: 21/12/2022
+// updated: 24/12/2022
 
+
+//container 
+export const Container = styled.div`
+  padding:3% 10%;
+  margin: 0 auto;
+  @media (max-width:512px){
+  padding:3% 7%;
+}
+`
 //Navbar sections
-
+export const Navigation = styled.div`
+  display: flex;
+  justify-content: space-between;
+  @media (max-width:748px){
+    flex-direction: column-reverse;
+    }
+`
 export const Nav = styled.div`
-  width:40%;
+  width:35%;
   margin-top: 35px;
   display:flex;
   justify-content: space-between;
@@ -15,10 +30,15 @@ export const Nav = styled.div`
   width:90%;
   }
 `
+export const Logo = styled.div`
+  width:26%; 
+  @media (max-width:748px){
+  width:100%;
+  }
+`
 export const Section = styled.div`
   text-align: center;
 `
-
 //icons
 export const HomeIcon = styled(ImHome)`
   transform: scale(2);
@@ -29,29 +49,46 @@ export const ProfileIcon = styled(ImProfile)`
   transform: scale(2);
   margin-bottom: 7px;
 `;
-
 export const TerminalIcon  = styled(ImTerminal)`
   transform: scale(2);
   margin-bottom: 7px;
 `;
 
 
-
-//container 
-export const Container = styled.div`
-  padding:3% 15%;
-  margin: 0 auto;
-  @media (max-width:512px){
-  padding:3% 7%;
-}
-`
-export const Flex = styled.div`
-  display: flex;
+export const AboutMe = styled.div`
+  margin-top:80px;
+  display:flex;
   justify-content: space-between;
+  align-items: center;
+  p{
+    width: 50%;
+    @media (max-width:748px){
+    width: 100%;
+  }
+  }
+  img{
+   width: 40%;
+   @media (max-width:748px){
+    margin-top: 40px;
+    width: 100%;
+  }}
   @media (max-width:748px){
-    flex-direction: column-reverse;
-    }
-`
+  flex-direction: column;
+  margin-top:50px;
+  }
+`;
+ 
+
+
+
+
+
+
+
+
+
+
+
 //text
 export const Text = styled.p`
 font-weight: 400;
