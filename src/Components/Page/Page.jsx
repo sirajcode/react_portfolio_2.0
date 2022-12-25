@@ -1,6 +1,6 @@
 import React from "react";
 import {Container,Text,HomeIcon, TerminalIcon,ProfileIcon,Section,Nav,Navigation,AboutMe,Logo,Project,FooterNav,FooterLinks} from "../Styled/Utilities";
-import { HeaderData } from '../../assets/PageData';
+import { res } from '../../assets/PageData';
 
 const Page = () => {
   return (
@@ -10,28 +10,26 @@ const Page = () => {
         <Header />
         <Skills />
         <Projects />
-        <Footer/>  
-        
+        <Footer/>      
       </Container>
     </>
   )
 }
 export default Page
 
-
 const Navbar = () => {
   return (
     <Navigation>
       <Nav>
-        <Section>
+        <Section align='center' text='#ffffff' href='/' >
           <HomeIcon/>
           <Text align='center' transform='uppercase'>Home</Text>
         </Section>
-        <Section>
-          <TerminalIcon />
+        <Section align='center' href='#project' text='#ffffff'>
+          <TerminalIcon/>
           <Text align='center' transform='uppercase'>Projects</Text>
         </Section>
-        <Section>
+        <Section align='center' download='' href={res} text='#ffffff'>
           <ProfileIcon/>
           <Text align='center' transform='uppercase'>Resume</Text>
         </Section>
@@ -73,18 +71,25 @@ const Skills = () => {
 
 const Projects = () => {
   return (
-      <Project> 
+    <Project id="project"> 
+     
       <Text fontSize='3' marginTop='5' marginBottom='5'  >Projects</Text>
-      <Text fontSize='2'   marginBottom='4' transform='uppercase'>Javascript / React js.</Text>   
+
+  
+      <Text fontSize='2' marginBottom='4' transform='uppercase'><Section href='/' >
+      
+      </Section></Text>   
+      <Text fontSize='2'>
+      
+      </Text>   
+
+    <Text fontSize='2' marginTop='4' marginBottom='4' transform='uppercase'><Section href='/' >Javascript / React js.</Section></Text>    
       <Text fontSize='2'>Engineering professional familiar with responsive web design and a firm believer in mobile first approach skilled with Javascript and React js.</Text>   
 
-       <Text fontSize='2'  marginTop='4'  marginBottom='4' transform='uppercase'>Javascript / React js.</Text>   
+      <Text fontSize='2' marginTop='4' marginBottom='4' transform='uppercase'><Section href='/' >Javascript / React js.</Section></Text>     
       <Text fontSize='2'>Engineering professional familiar with responsive web design and a firm believer in mobile first approach skilled with Javascript and React js.</Text>   
 
-       <Text fontSize='2'  marginTop='4'  marginBottom='4' transform='uppercase'>Javascript / React js.</Text>   
-      <Text fontSize='2'>Engineering professional familiar with responsive web design and a firm believer in mobile first approach skilled with Javascript and React js.</Text>   
-
-       <Text fontSize='2'  marginTop='4'  marginBottom='4' transform='uppercase'>Javascript / React js.</Text>   
+      <Text fontSize='2' marginTop='4' marginBottom='4' transform='uppercase'><Section href='/' >Javascript / React js.</Section></Text>  
       <Text fontSize='2'>Engineering professional familiar with responsive web design and a firm believer in mobile first approach skilled with Javascript and React js.</Text>   
     </Project>  
   );  
@@ -93,19 +98,18 @@ const Projects = () => {
 const Footer = () => {
   return (
     <FooterNav style={{ display: "flex", justifyContent:"center",alignItems:"center"}}>
-       <FooterLinks>  
-      <Text fontSize='2'>
-        linkedin
-      </Text>
-      <Text fontSize='2'>
-        github
-      </Text>
-      <Text fontSize='2'>
-        mail
-      </Text>
+      <FooterLinks>  
+        <Section>
+          <Text fontSize='2'>linkedin</Text>
+        </Section>
+         <Section>
+              <Text fontSize='2'>github</Text>
+        </Section>
+         <Section>
+         <Text fontSize='2'>mail</Text>
+        </Section>
     </FooterLinks>
   </FooterNav>
-   
   );
 }
 

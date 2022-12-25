@@ -36,8 +36,11 @@ export const Logo = styled.div`
   width:100%;
   }
 `
-export const Section = styled.div`
-  text-align: center;
+export const Section = styled.a`
+  cursor: pointer;
+  text-align: ${props => props.align ? 'center' : 'left'};
+  color: ${props => props.text ? '#ffffff' : '#59FF85'};
+  text-transform: ${props => props.transform ? 'uppercase' : 'normal'};
 `
 //icons
 export const HomeIcon = styled(ImHome)`
@@ -108,11 +111,18 @@ line-height:1.5;
 text-transform: ${props => props.transform ? 'uppercase' : 'normal'};
 // font size
 font-size:${({ fontSize }) => {
-  if (fontSize === '1') return '18'
-      else if(fontSize === '2') return '24px'
-      else if(fontSize === '3') return '46px'
+  if (fontSize === '1') return '18px'
+      else if(fontSize === '2') return '26px'
+      else if(fontSize === '3') return '50px'
   return '18px'
 }};
+ @media (max-width:748px){
+  font-size:${({ fontSize }) => {
+  if (fontSize === '1') return '18px'
+      else if(fontSize === '2') return '20px'
+      else if(fontSize === '3') return '40px'
+  return '18px'
+}};}
 text-align: ${({align}) => {
     if (align === 'center') return 'center'
     else if (align === 'right') return 'right'
@@ -179,7 +189,7 @@ margin-right: ${({ marginRight }) => {
 export const GlobalStyle = createGlobalStyle`
    *,*:before,*:after{box-sizing: border-box;}
 /* ! margins */
-body,h1,h2,h3,h4,h5,figure,picture,p,div,a{margin: 0;padding: 0;}
+body,h1,h2,h3,h4,h5,figure,picture,p,div,a{margin: 0;padding: 0; }
 /* ! setting up body */
 body{line-height: 1.5; min-height: 100vh;  font-family: 'VT323'; color:#ffffff;background-color:#262626;} 
 /* ! pictures and images */

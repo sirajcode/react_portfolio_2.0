@@ -1,5 +1,9 @@
 import { VscFolder } from "react-icons/vsc";
 
+import resume from './oldpc.png'
+export const res = resume;
+
+
 //Header Section 
 export const HeaderData = {
     title: `under construction `,
