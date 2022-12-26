@@ -1,90 +1,65 @@
-import { VscFolder } from "react-icons/vsc";
+import {HomeIcon,TerminalIcon,ProfileIcon} from '../Components/Styled/Utilities'
 
+// Nav section Links
 import resume from './oldpc.png'
-export const res = resume;
 
-
+// Nav Section
+export const NavData = [
+    { id: 1, icon :<HomeIcon/>, name: `home`, link: '/',},
+    { id: 2, icon:<TerminalIcon/>,name: `projects`,link: '#project',},
+    { id: 3, icon: <ProfileIcon />, name: `resume`, link: resume, attr: '' }];
+     
 //Header Section 
+import oldpc from './oldpc.png'
 export const HeaderData = {
-    title: `under construction `,
-    text: `coming soon...`,
+    title: `M. Siraj`,
+    text: `Front-end developer`,
+    desc: `Engineering professional familiar with RWD and a firm believer in Mobile - first approach skilled with Javascript and React js.Mostly I use Javascript, React js, Html, CSS, Styled-components, Tailwind, Bootstrap, and Material UI for crafting beautiful user interfaces.`,
+    link: oldpc,
 };
 
-// Engineering professional familiar with RWD and a firm believer in Mobile - first approach skilled with Javascript and React js.Mostly I use Javascript, React js, Html, CSS, Styled-components, Tailwind, Bootstrap, and Material UI for crafting beautiful user interfaces.
+// skills section
+export const SkillsData = {
+    skilltitle: `Skills`,
+    skill1: `JAVASCRIPT / REACT JS.`,
+    skill2: `CSS / SASS / Styled Component /   Bootstrap / Tailwind`,
+    skill3: `Rest Api`,
+};
 
 //Projects Section
+export const Protitle = `Projects`;
 export const ProjectsData = [
      {
-        id: 1,
-        icon: <VscFolder size={45} />,
-        heading: `Design Source, Design system`,
-        name1: `CODE `,
-        sep: ' | ' ,
-        name2: `PREVIEW`,
-        link1: 'https://github.com/engsiraj/designsource',
-        link2: 'https://designsource.netlify.app/',
-        tech: `Html | CSS | Flexbox`
+        id: 1, title: `Design Source, Design system`,
+        link: 'https://github.com/engsiraj/designsource',
+        detail: `Project descrition`
     },
      {
-        id: 2,
-        icon: <VscFolder size={45} />,
-        heading: `Netflix Landing Page Clone`,
-        name1: `CODE `,
-        sep: ' | ',
-        name2: `PREVIEW`,
-        link1: 'https://github.com/engsiraj/netflixclone',
-        link2: 'https://netflixcloneappsirajofcl.netlify.app/',
-        tech: `React js | Styled-components | RWD `
+        id: 2, title: `Netflix Landing Page Clone`,
+        link: 'https://github.com/engsiraj/netflixclone',
+        detail: `Project descrition`
     },
     
     {
-        id: 3,
-        icon: <VscFolder size={45} />,
-        heading: `React Portfolio 2.0`,
-        name1: `CODE `,
-        sep: ' | ',
-        name2: `PREVIEW`,
-        link1: 'https://github.com/eng/portfolio-2.0',
-        link2: 'https://portfolio-2-0-hazel-one.vercel.app/',
-        tech: `React js | Styled-components`
+        id: 3, title: `React Portfolio 2.0`,
+        link: 'https://github.com/eng/portfolio-2.0',
+        detail: `Project descrition`
     },
     {
-        id: 4,
-        icon: <VscFolder size={45} />,
-        heading: `React Portfolio`,
-        name1: `CODE `,
-        // sep: ' | ',
-        // name2: ` PREVIEW`,
-        link1: 'https://github.com/engsiraj/React-portfolio',
-        // link2: 'https://siraj-portfolio.herokuapp.com/',
-        tech: `React js | CSS`
+        id: 4, title: `React Portfolio`,
+        link: 'https://github.com/engsiraj/React-portfolio',
+        detail: `Project descrition`
     },
     {
-        id: 5,
-        icon: <VscFolder size={45} />,
-        heading: `Product Landing Page`,
-        name1: `CODE `,
-        sep: ' | ' ,
-        name2: `PREVIEW`,
-        link1: 'https://github.com/engsiraj/product-landingpage',
-        link2: 'https://prodduct-landing-page.netlify.app/',
-        tech: `React Js | CSS `
+        id: 5, title: `Product Landing Page`,
+        link: 'https://github.com/engsiraj/product-landingpage',
+        detail: `Project descrition`
     },
    ];
 
 //Footer Section
-export const FooterTitle = `Let's talk`;
 export const Links = [
-    {
-        id: 1,
-        name: `GitHub`,
-        link: 'https://github.com/engsiraj',
-        text: ` : https://github.com/engsiraj`
-    },
-    {
-        id: 2,
-        name: `LinkedIn`,
-        link: 'https://www.linkedin.com/in/engsiraj/',
-        text: ` : https://www.linkedin.com/in/engsiraj/`
-    }
+    {id: 1, name: `linkedin`, link: 'https://www.linkedin.com/in/engsiraj/', },
+    {id: 2, name: `github`,link: 'https://github.com/engsiraj',},
+    {id: 3, name: `mail`,link: 'mailto:sirajbhutta50@gmail.com',}
 ];

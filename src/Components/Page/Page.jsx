@@ -1,6 +1,6 @@
 import React from "react";
-import {Container,Text,HomeIcon, TerminalIcon,ProfileIcon,Section,Nav,Navigation,AboutMe,Logo,Project,FooterNav,FooterLinks} from "../Styled/Utilities";
-import { res } from '../../assets/PageData';
+import {Container,Text,Section,Nav,Navigation,AboutMe,Logo,Project,FooterNav,FooterLinks} from "../Styled/Utilities";
+import {NavData, HeaderData, SkillsData,ProjectsData,Protitle,Links } from '../../assets/PageData';
 
 const Page = () => {
   return (
@@ -16,99 +16,78 @@ const Page = () => {
   )
 }
 export default Page
-
+//nav section
 const Navbar = () => {
+  const { title, text } = HeaderData;
+  const data = NavData.map(({id,link,icon,name, attr}) =>
+      <Section key={id} align='center' text='#ffffff' href={link} download={attr} >
+        {icon}
+         <Text align='center' transform='uppercase'>{name}</Text>
+       </Section>
+  );
   return (
     <Navigation>
       <Nav>
-        <Section align='center' text='#ffffff' href='/' >
-          <HomeIcon/>
-          <Text align='center' transform='uppercase'>Home</Text>
-        </Section>
-        <Section align='center' href='#project' text='#ffffff'>
-          <TerminalIcon/>
-          <Text align='center' transform='uppercase'>Projects</Text>
-        </Section>
-        <Section align='center' download='' href={res} text='#ffffff'>
-          <ProfileIcon/>
-          <Text align='center' transform='uppercase'>Resume</Text>
-        </Section>
+         {data}
       </Nav>
       <Logo>
-         <Text fontSize='3'>
-          M. Siraj
-        </Text>
-        <Text fontSize='2' marginTop='-1'>
-          Front-end developer
-        </Text>
+        <Text fontSize='3'>{title}</Text>
+        <Text fontSize='2' marginTop='-1'>{text}</Text>
       </Logo>
 </Navigation>
   );
 }
-
+//header section
 const Header = () => {
+    const { desc, link } = HeaderData;
   return (
     <AboutMe>
-      <Text fontSize='2' >
-        Engineering professional familiar with responsive web design and a firm believer in mobile first approach skilled with Javascript and React js.Mostly I use Javascript, React js, Html, CSS, Styled-components, Tailwind, Bootstrap, and Material UI for crafting beautiful user interfaces.
-      </Text>
-      <img src="../../../src/assets/oldpc.png" alt="old Computer File" />
+      <Text fontSize='2' >{desc}</Text>
+      <img src={link} alt="old Computer File" />
     </AboutMe>
   );
 }
-
+// skills section
 const Skills = () => {
+    const {skilltitle, skill1,skill2,skill3} = SkillsData;
   return (
     <> 
-      <Text fontSize='3' marginTop='5' marginBottom='5'>Skills</Text>
-      <Text fontSize='2' transform='uppercase' >Javascript / React js.</Text>  
-      <Text fontSize='2' transform='uppercase' >CSS / SASS / Styled Component /   Bootstrap / Tailwind</Text>  
-      <Text fontSize='2' transform='uppercase' >Rest Api</Text>  
+      <Text fontSize='3' marginTop='5' marginBottom='5'>{skilltitle}</Text>
+      <Text fontSize='2' transform='uppercase' >{skill1}</Text>  
+      <Text fontSize='2' transform='uppercase' >{skill2}</Text>  
+      <Text fontSize='2' transform='uppercase' >{skill3}</Text>  
     </>
    
   );
 }
-
+//projects section
 const Projects = () => {
+  const content = ProjectsData.map(({ id, link, title, detail }) =>
+    <div key={id}>
+    <Text fontSize='2'marginTop='4' marginBottom='2' transform='uppercase'>
+      <Section href={link} >{title}</Section>
+    </Text>   
+    <Text fontSize='2'>{detail}</Text>
+   </div>);
   return (
     <Project id="project"> 
-     
-      <Text fontSize='3' marginTop='5' marginBottom='5'  >Projects</Text>
-
-  
-      <Text fontSize='2' marginBottom='4' transform='uppercase'><Section href='/' >
-      
-      </Section></Text>   
-      <Text fontSize='2'>
-      
-      </Text>   
-
-    <Text fontSize='2' marginTop='4' marginBottom='4' transform='uppercase'><Section href='/' >Javascript / React js.</Section></Text>    
-      <Text fontSize='2'>Engineering professional familiar with responsive web design and a firm believer in mobile first approach skilled with Javascript and React js.</Text>   
-
-      <Text fontSize='2' marginTop='4' marginBottom='4' transform='uppercase'><Section href='/' >Javascript / React js.</Section></Text>     
-      <Text fontSize='2'>Engineering professional familiar with responsive web design and a firm believer in mobile first approach skilled with Javascript and React js.</Text>   
-
-      <Text fontSize='2' marginTop='4' marginBottom='4' transform='uppercase'><Section href='/' >Javascript / React js.</Section></Text>  
-      <Text fontSize='2'>Engineering professional familiar with responsive web design and a firm believer in mobile first approach skilled with Javascript and React js.</Text>   
-    </Project>  
+      <Text fontSize='3' marginTop='5' marginBottom='5'>{Protitle}</Text>
+       {content}
+      </Project>  
   );  
 }
-
+//footer section
 const Footer = () => {
+  const contact = Links.map(({ id, link, name }) =>
+    <Section key={id} href={link}>
+      <Text fontSize='2'>{name}</Text>
+    </Section>
+);
   return (
-    <FooterNav style={{ display: "flex", justifyContent:"center",alignItems:"center"}}>
+    <FooterNav>
       <FooterLinks>  
-        <Section>
-          <Text fontSize='2'>linkedin</Text>
-        </Section>
-         <Section>
-              <Text fontSize='2'>github</Text>
-        </Section>
-         <Section>
-         <Text fontSize='2'>mail</Text>
-        </Section>
-    </FooterLinks>
+       {contact}
+      </FooterLinks>
   </FooterNav>
   );
 }
