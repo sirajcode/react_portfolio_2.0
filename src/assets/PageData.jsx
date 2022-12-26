@@ -28,32 +28,36 @@ export const SkillsData = {
 
 //Projects Section
 export const Protitle = `Projects`;
-export const ProjectsData = [
+export const ProjectsData = [ {
+        id: 1, title: `Studio - design system`,
+        link: 'https://github.com/engsiraj/studio',
+        detail: `Front-end ui design system build with react and styled-components is mainly focused for designing user interfaces using true reuseable components with ux and ui needs.`
+    },
      {
         id: 1, title: `Design Source, Design system`,
         link: 'https://github.com/engsiraj/designsource',
-        detail: `Project descrition`
+        detail: `Front-end ui design system build with css and flexbox is mainly focused for designing user interfaces using css with ux and ui needs.`
     },
      {
         id: 2, title: `Netflix Landing Page Clone`,
         link: 'https://github.com/engsiraj/netflixclone',
-        detail: `Project descrition`
+        detail: `Netflix landing page build with react js styled with styled-compnent using mordren design approach.`
     },
     
     {
         id: 3, title: `React Portfolio 2.0`,
         link: 'https://github.com/eng/portfolio-2.0',
-        detail: `Project descrition`
+        detail: `The crrunt landing page is build with react js using styled-compnents. design system approach used to achieve the truly reusable components.`
     },
     {
         id: 4, title: `React Portfolio`,
         link: 'https://github.com/engsiraj/React-portfolio',
-        detail: `Project descrition`
+        detail: `React portfolio app build with react js using css for styling to showcase the student portfolio from last years`
     },
     {
         id: 5, title: `Product Landing Page`,
         link: 'https://github.com/engsiraj/product-landingpage',
-        detail: `Project descrition`
+        detail: `Product landing page is build with react js and css for detailed showcase of product`
     },
    ];
 
