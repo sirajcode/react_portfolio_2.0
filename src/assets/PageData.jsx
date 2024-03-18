@@ -47,7 +47,7 @@ export const ProjectsData = [ {
     {
         id: 3, title: `React Portfolio 2.0`,
         link: 'https://github.com/eng/portfolio-2.0',
-        detail: `The crrunt landing page is build with react js using styled-compnents. design system approach used to achieve the truly reusable components.`
+        detail: `The current landing page is build with react js using styled-compnents. design system approach used to achieve the truly reusable components.`
     },
     {
         id: 4, title: `React Portfolio`,
