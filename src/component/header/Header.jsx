@@ -1,9 +1,14 @@
+import { MainPageHeader, AnimatedText, SimpleText } from "./Header.styled";
 
-
-const Header = () => {
+export const Header = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <div>
+      <MainPageHeader>
+        <SimpleText>hi i am,</SimpleText>
+        <AnimatedText>Siraj</AnimatedText>
+      </MainPageHeader>
+    </div>
+  );
+};
 
-export default Header
+
