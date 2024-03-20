@@ -27,10 +27,15 @@ export const Button = styled.button`
   font-size: 15px;
   font-weight: 700;
   padding: 6px 14px;
-  border-radius: ${radius.round};
   cursor: pointer;
+  border-radius: ${radius.round};
   color: ${color.white};
-  text-transform: ${(props) => (props.transform ? "uppercase" : "normal")};
+  text-transform: ${(p) => p.transform};
+  margin: ${(p) => p.margin};
+  margin-top: ${(p) => p.margin_top};
+  margin-bottom: ${(p) => p.margin_bottom};
+  margin-left: ${(p) => p.margin_left};
+  margin-right: ${(p) => p.margin_right};
   ${(p) => {
     if (p.blue) return `${blueBtn}`;
     else if (p.green) return `${greenBtn}`;
