@@ -1,13 +1,21 @@
-import {MainPageHeader} from './Home.styled'
-
-const HomePage = () => {
+import { About, Header, Nav, Project, Skill,Contact } from "../../component";
+import { Separator } from "../../library";
+import { HeadContainer, Container } from "./Home.styled";
+export const HomePage = () => {
   return (
-    <div>
-      <MainPageHeader>
-        <div>Siraj</div>
-      </MainPageHeader>
-    </div>
+    <>
+      <HeadContainer>
+        <Header />
+        <Nav />
+      </HeadContainer>
+      <Container>
+        <About />
+        <Skill />
+        <Separator />
+        <Project />
+        <Separator />
+        <Contact/>
+      </Container>
+    </>
   );
 };
-
-export default HomePage;
