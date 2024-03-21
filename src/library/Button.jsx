@@ -24,9 +24,10 @@ const yellowBtn = `
 `;
 
 export const Button = styled.button`
-  font-size: 15px;
+  font-size:18px;
+  letter-spacing: 1px;
   font-weight: 700;
-  padding: 6px 14px;
+  padding: 4px 16px;
   cursor: pointer;
   border-radius: ${radius.round};
   color: ${color.white};

@@ -11,7 +11,7 @@ const TextColor = (p) => {
 };
 
 export const HrefLink = styled.a`
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   font-weight: 600;
   text-align: ${(p) => p.align};
