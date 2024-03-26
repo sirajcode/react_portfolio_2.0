@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { color } from "../assets";
+import { color, textSize } from "../assets";
 
 const TextColor = (p) => {
   const text = p.textColor;
@@ -11,9 +11,8 @@ const TextColor = (p) => {
 };
 
 export const HrefLink = styled.a`
-  font-size: 18px;
+  font-size: ${textSize.button};
   cursor: pointer;
-  font-weight: 600;
   text-align: ${(p) => p.align};
   color: ${TextColor};
   text-transform: ${(p) => p.transform};

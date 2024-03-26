@@ -1,34 +1,30 @@
 import styled from "styled-components";
-import { color, radius } from "../assets";
+import { color, radius, textSize } from "../assets";
 
 const blueBtn = `
-   border: 0.125rem solid ${color.blue};
    background-color: ${color.bluebg};
    :hover {background-color: ${color.blue};}
 `;
 const greenBtn = `
-   border: 0.125rem solid ${color.green};
    background-color: ${color.greenbg};
    :hover {background-color: ${color.green};}
    
 `;
 const redBtn = `
-   border: 0.125rem solid ${color.red};
    background-color: ${color.redbg};
    :hover {background-color: ${color.red};}
 `;
 const yellowBtn = `
-   border: 0.125rem solid ${color.yellow};
    background-color: ${color.yellowbg};
    :hover {background-color: ${color.yellow};}
 `;
 
 export const Button = styled.button`
-  font-size:18px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  padding: 4px 16px;
+  font-size: ${textSize.button};
+  font-weight: 600;
+  padding: 6px 16px;
   cursor: pointer;
+  border: none;
   border-radius: ${radius.round};
   color: ${color.white};
   text-transform: ${(p) => p.transform};
