@@ -1,27 +1,38 @@
 import { Text } from "../../library";
-import { StackName } from "./Skill.styled";
-import { SkillsSection } from "./Skill.styled";
+import { SkillsSection, Skills, Stack } from "./Skill.styled";
+import {
+  JsIcon,
+  TypeIcon,
+  ReIcon,
+  NextIcon,
+  PyIcon,
+  DjIcon,
+  FlaskIcon,
+  FastIcon,
+} from "../../assets";
+
+const skillIcons = [
+  { id: 1, icon: <JsIcon /> },
+  { id: 2, icon: <TypeIcon /> },
+  { id: 3, icon: <ReIcon /> },
+  { id: 4, icon: <NextIcon /> },
+  { id: 5, icon: <PyIcon /> },
+  { id: 6, icon: <DjIcon /> },
+  { id: 7, icon: <FlaskIcon /> },
+  { id: 8, icon: <FastIcon /> },
+];
 
 export const Skill = () => {
   return (
     <SkillsSection>
-      <Text font="mdtitle">
-        skills
+      <Text font="mdtitle" weight="500" margin_bottom="10px">
+        Skills
       </Text>
-      <StackName>Frontend: </StackName>
-      <StackName>html </StackName>
-      <StackName>css </StackName>
-      <StackName>javascript </StackName>
-      <StackName>typescript </StackName>
-      <StackName>React js </StackName>
-      <StackName>Next js </StackName>
-      <Text></Text>
-      <StackName>backend: </StackName>
-      <StackName>python </StackName>
-      <StackName>django </StackName>
-      <StackName>django rest-framework </StackName>
-      <StackName>flask </StackName>
-      <StackName>rest api </StackName>
+      <Skills>
+        {skillIcons.map((data) => (
+          <Stack key={data.id}>{data.icon}</Stack>
+        ))}
+      </Skills>
     </SkillsSection>
   );
 };

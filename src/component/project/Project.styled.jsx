@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { color, radius } from "../../assets";
+import { color, radius, textSize } from "../../assets";
 
 export const ProjectSection = styled.div`
   display: flex;
@@ -9,8 +9,10 @@ export const ProjectSection = styled.div`
   border-radius: ${radius.round};
   cursor: pointer;
   padding: 20px;
+  border: 0.125rem solid transparent;
+
   :hover {
-    background-color: ${color.bluebg};
+    border-color: rgba(255, 255, 255, 0.2);
   }
   @media (max-width: 767px) {
     display: block;
@@ -40,6 +42,7 @@ export const Stack = styled.span`
   border: none;
   border-radius: ${radius.round};
   background-color: ${color.bluebg};
+  font-size: ${textSize.button};
   padding: 4px 10px;
   margin-right: 5px;
 `;
@@ -47,4 +50,10 @@ export const Stack = styled.span`
 export const Main = styled.div`
   margin-top: 50px;
   margin-bottom: 50px;
+`;
+export const Center = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 `;

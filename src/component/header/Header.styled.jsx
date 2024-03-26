@@ -1,18 +1,15 @@
 import styled, { keyframes } from "styled-components";
 
 export const MainPageHeader = styled.div`
-  border: 0.125rem solid rgba(255, 255, 255, 0.2);
-  border-radius: 1rem;
-  height: 80vh;
+ padding-bottom:50px;
+ text-align: center;
+`;
+export const HeaderContent = styled.div`
+  height: calc(82vh - 50px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`;
-
-export const SimpleText = styled.p`
-  margin-bottom: -30px;
-  font-size: 28px;
 `;
 
 const background = keyframes`
@@ -21,8 +18,8 @@ const background = keyframes`
   100% { background-position: 0% 50%; }
 `;
 export const AnimatedText = styled.span`
-  font-size: 100px;
-  font-weight: bold;
+  font-size: 120px;
+  font-weight: 600;
   background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   color: transparent;
