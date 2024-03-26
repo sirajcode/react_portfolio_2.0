@@ -1,20 +1,20 @@
-import { About, Header, Nav, Project, Skill,Contact } from "../../component";
+import { About, Header, Nav, Project, Skill, Contact } from "../../component";
 import { Separator } from "../../library";
-import { HeadContainer, Container } from "./Home.styled";
+import { Container } from "./Home.styled";
+
 export const HomePage = () => {
   return (
     <>
-      <HeadContainer>
-        <Header />
-        <Nav />
-      </HeadContainer>
       <Container>
+        <Nav />
+        <Header />
+        <Separator />
         <About />
         <Skill />
         <Separator />
         <Project />
         <Separator />
-        <Contact/>
+        <Contact />
       </Container>
     </>
   );
