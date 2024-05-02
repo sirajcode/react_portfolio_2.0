@@ -1,5 +1,4 @@
-import { ProjectIcon } from "../../assets";
-import { Text, Button } from "../../library";
+import { Text, HrefLink } from "../../library";
 import { SelectedProjects } from "../../assets";
 import {
   ProjectSection,
@@ -14,7 +13,7 @@ export const Project = () => {
   return (
     <Main id="project">
       <Text font="title" weight="500">
-        <ProjectIcon /> Projects
+        Projects
       </Text>
       {SelectedProjects.map((data) => (
         <ProjectSection key={data.id}>
@@ -22,10 +21,15 @@ export const Project = () => {
             <img src={data.image} alt={data.title} />
           </List>
           <Content>
-            <Text font="smtitle" weight="500" margin_bottom="4px">
+            <Text
+              font="smtitle"
+              weight="500"
+              margin_bottom="8px"
+              margin_top="10px"
+            >
               {data.title}
             </Text>
-            <Text font="text" margin_bottom="20px">
+            <Text font="button" margin_bottom="12px">
               {data.detail}
             </Text>
             <Stack>{data.one}</Stack>
@@ -34,7 +38,9 @@ export const Project = () => {
         </ProjectSection>
       ))}
       <Center>
-        <Button green>project's archive</Button>
+        <HrefLink textColor="green" target="_blank">
+          see full archive
+        </HrefLink>
       </Center>
     </Main>
   );

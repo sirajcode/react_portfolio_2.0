@@ -7,13 +7,9 @@ export const HomePage = () => {
     <>
       <Container>
         <Nav />
-        <Header />
-        <Separator />
         <About />
         <Skill />
-        <Separator />
         <Project />
-        <Separator />
         <Contact />
       </Container>
     </>

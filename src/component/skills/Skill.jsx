@@ -7,7 +7,6 @@ import {
   NextIcon,
   PyIcon,
   DjIcon,
-  FlaskIcon,
   FastIcon,
 } from "../../assets";
 
@@ -18,7 +17,6 @@ const skillIcons = [
   { id: 4, icon: <NextIcon /> },
   { id: 5, icon: <PyIcon /> },
   { id: 6, icon: <DjIcon /> },
-  { id: 7, icon: <FlaskIcon /> },
   { id: 8, icon: <FastIcon /> },
 ];
 
@@ -26,7 +24,7 @@ export const Skill = () => {
   return (
     <SkillsSection>
       <Text font="mdtitle" weight="500" margin_bottom="10px">
-        Skills
+        Tech stack
       </Text>
       <Skills>
         {skillIcons.map((data) => (
