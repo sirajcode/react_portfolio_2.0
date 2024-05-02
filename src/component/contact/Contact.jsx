@@ -4,10 +4,10 @@ export const Contact = () => {
   return (
     <ContactSection>
       <Text margin_top="30px" margin_bottom="30px" weight="500" font="title">
-       Say Hello,
+        Say Hello,
       </Text>
       <Text font="text" margin_bottom="20px">
-        Let's chat! Myinbox is like a portal to possibility, waiting for your
+        Let's chat! My inbox is like a portal to possibility, waiting for your
         project ideas to whoosh through.
       </Text>
       <Text font="text" weight="500">
@@ -16,21 +16,31 @@ export const Contact = () => {
       <HrefLink textColor="green" href="mailto:sirajbhutta50@gmail.com">
         sirajbhutta50@gmail.com
       </HrefLink>
-      <Text margin_bottom="20px"></Text>
-      <Text font="text" weight="500">
-        for updates:
-      </Text>
+      {" | "}
       <HrefLink
         textColor="green"
         target="_blank"
+        href="https://wa.me/+923330662021"
       >
-        LinkedIn
+        whatsapp
       </HrefLink>
       {" | "}
       <HrefLink
         textColor="green"
         target="_blank"
+        href="tel:+92330662021"
       >
+        call
+      </HrefLink>
+      <Text margin_bottom="20px"></Text>
+      <Text font="text" weight="500">
+        for updates:
+      </Text>
+      <HrefLink textColor="green" target="_blank">
+        LinkedIn
+      </HrefLink>
+      {" | "}
+      <HrefLink textColor="green" target="_blank">
         github
       </HrefLink>
     </ContactSection>
