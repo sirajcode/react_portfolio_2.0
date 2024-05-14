@@ -13,7 +13,7 @@ export const color = {
     //button colors
 }
 export const radius = {
-    round: '1rem',
+    round: '1.125rem',
 }
 
 //text sizes 
@@ -22,5 +22,5 @@ export const textSize = {
     mdtitle: '28px',
     smtitle: '20px',
     text: '17px',
-    button:'15px',
+    button: '15px',
 }
