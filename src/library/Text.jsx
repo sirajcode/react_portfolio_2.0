@@ -22,6 +22,7 @@ const TextColor = (p) => {
 export const Text = styled.p`
   line-height: 1.5;
   font-weight: ${(p) => p.weight};
+  font-family: ${(p) => p.family};
   text-transform: ${(p) => p.transform};
   text-align: ${(p) => p.align};
   margin: ${(p) => p.margin};
@@ -36,4 +37,10 @@ export const Text = styled.p`
   padding-right: ${(p) => p.padding_right};
   font-size: ${FontSize};
   color: ${TextColor};
+`;
+
+export const Line = styled.p`
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
 `;

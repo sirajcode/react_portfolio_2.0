@@ -6,23 +6,15 @@ const blueBtn = `
    :hover {background-color: ${color.blue};}
 `;
 const greenBtn = `
-   background-color: ${color.greenbg};
-   :hover {background-color: ${color.green};}
-   
-`;
-const redBtn = `
-   background-color: ${color.redbg};
-   :hover {background-color: ${color.red};}
-`;
-const yellowBtn = `
-   background-color: ${color.yellowbg};
-   :hover {background-color: ${color.yellow};}
+   background-color: ${color.Dark300};
+   color: ${color.Dark50};
+   border:1px solid ${color.Dark50};
 `;
 
 export const Button = styled.button`
-  font-size: ${textSize.button};
-  font-weight: 600;
-  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 8px;
   cursor: pointer;
   border: none;
   border-radius: ${radius.round};
@@ -33,10 +25,8 @@ export const Button = styled.button`
   margin-bottom: ${(p) => p.margin_bottom};
   margin-left: ${(p) => p.margin_left};
   margin-right: ${(p) => p.margin_right};
+  font-family: Inter;
   ${(p) => {
-    if (p.blue) return `${blueBtn}`;
-    else if (p.green) return `${greenBtn}`;
-    else if (p.yellow) return `${yellowBtn} `;
-    else if (p.red) return `${redBtn}`;
+    if (p.green) return `${greenBtn}`;
   }}
 `;
