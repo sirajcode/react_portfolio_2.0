@@ -1,7 +1,5 @@
 const Exper = () => {
-  return (
-    <div>Exper</div>
-  )
+  return <div>Where I’ve Worked</div>;
 }
 
 export default Exper

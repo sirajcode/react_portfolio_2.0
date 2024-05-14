@@ -1,42 +1,57 @@
+import { useState } from "react";
 import { Text, HrefLink } from "../../library";
-import { SelectedProjects } from "../../assets";
+import { AllProjects } from "../../assets";
 import {
-  ProjectSection,
   List,
   Content,
-  Stack,
   Main,
   Center,
+  MainTabs,
+  Tab,
 } from "./Project.styled";
 
 export const Project = () => {
+  const [activeTab, setActiveTab] = useState(0);
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
+
   return (
     <Main id="project">
-      <Text font="title" weight="500">
-        Projects
+      <Text family="VT323" font="title" weight="500" margin_bottom="20px">
+        Some Things I’ve Built
       </Text>
-      {SelectedProjects.map((data) => (
-        <ProjectSection key={data.id}>
-          <List>
-            <img src={data.image} alt={data.title} />
-          </List>
-          <Content>
-            <Text
-              font="smtitle"
-              weight="500"
-              margin_bottom="8px"
-              margin_top="10px"
+      <MainTabs>
+        <List>
+          {AllProjects.map((tab, index) => (
+            <Tab
+              active={index === activeTab ?? true}
+              key={index}
+              onClick={() => handleTabClick(index)}
             >
-              {data.title}
-            </Text>
-            <Text font="button" margin_bottom="12px">
-              {data.detail}
-            </Text>
-            <Stack>{data.one}</Stack>
-            <Stack>{data.two}</Stack>
-          </Content>
-        </ProjectSection>
-      ))}
+              {tab.name}
+            </Tab>
+          ))}
+        </List>
+        <Content>
+          <Text font="mdtitle" family="VT323">
+            {AllProjects[activeTab]?.title}
+          </Text>
+          <ul>
+            <li>{AllProjects[activeTab]?.goal}</li>
+            <li>{AllProjects[activeTab]?.tech}</li>
+            <li>{AllProjects[activeTab]?.detail}</li>
+          </ul>
+
+          {/* <HrefLink
+            textColor="green"
+            target="_blank"
+            href={AllProjects[activeTab]?.link}
+          >
+            {AllProjects[activeTab]?.link}
+          </HrefLink> */}
+        </Content>
+      </MainTabs>
       <Center>
         <HrefLink textColor="green" target="_blank">
           see full archive
