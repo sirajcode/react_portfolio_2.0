@@ -1,4 +1,4 @@
-import { Text, Line, Button } from "../../library";
+import { Text,Pill } from "../../library";
 import {
   AboutSection,
   AboutContent,
@@ -10,6 +10,7 @@ import {
 } from "./About.styled";
 import { Skill } from "../skills/Skill";
 import { PngImage } from "../../assets";
+
 
 const aboutme = [
   {
@@ -23,8 +24,8 @@ export const About = () => {
     <AboutMain>
       <AboutSection>
         <AboutContent>
-          <Text font="title" family="VT323" weight="500">
-            Hi, i am siraj
+          <Text font="lg" family="VT323" weight="500">
+            Hi, i am Siraj
           </Text>
           {aboutme.map((data) => (
             <Text family="Inter" margin_top="8px" font="text" key={data.id}>
@@ -42,6 +43,7 @@ export const About = () => {
                 family="VT323"
                 font="mdtitle"
                 weight="500"
+                color="light"
               >
                 M. Siraj
               </Text>
@@ -50,12 +52,12 @@ export const About = () => {
                 family="Inter"
                 font="button"
                 weight="300"
+                color="light"
               >
                 Full-stack web developer
               </Text>
               <Tags>
-                <Button green>React</Button> <Button green>NextJs</Button>{" "}
-                <Button green>Django</Button>
+                <Pill>React</Pill> <Pill>NextJs</Pill> <Pill>Django</Pill>
               </Tags>
             </CardContent>
           </Card>

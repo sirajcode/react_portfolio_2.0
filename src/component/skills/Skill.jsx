@@ -1,5 +1,5 @@
 import { Text } from "../../library";
-import { SkillsSection, Skills, Stack } from "./Skill.styled";
+import {  Skills, Stack } from "./Skill.styled";
 import {
   JsIcon,
   TypeIcon,
@@ -22,8 +22,8 @@ const skillIcons = [
 
 export const Skill = () => {
   return (
-    <SkillsSection>
-      <Text font="mdtitle" family="VT323" weight="500" margin_bottom="10px">
+    <>
+      <Text font="mdtitle" family="VT323" weight="300" margin_bottom="10px">
         Tech stack
       </Text>
       <Skills>
@@ -31,6 +31,6 @@ export const Skill = () => {
           <Stack key={data.id}>{data.icon}</Stack>
         ))}
       </Skills>
-    </SkillsSection>
+    </>
   );
 };

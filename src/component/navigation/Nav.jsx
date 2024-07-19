@@ -1,5 +1,5 @@
 import { Navigation } from "./Nav.styled";
-import { HrefLink } from "../../library";
+import { Button,Text } from "../../library";
 export const Nav = () => {
   const resume = "this is my resume";
   const scrollToSection = () => {
@@ -10,14 +10,15 @@ export const Nav = () => {
     <>
       <Navigation>
         <nav>
-          <HrefLink textColor="green" onClick={scrollToSection}>
-            Projects
-          </HrefLink>
+          <Text family="VT323" font="smtitle" weight="500">
+            {"<siraj.code/>"}
+          </Text>
+          <Text font="VT323"> </Text>
         </nav>
         <nav>
-          <HrefLink textColor="green" download="" href={resume}>
-            download resume
-          </HrefLink>
+          <Button  dark download="" href={resume}>
+            Project | Resume | Contact
+          </Button>
         </nav>
       </Navigation>
     </>

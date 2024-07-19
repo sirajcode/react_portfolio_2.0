@@ -1,62 +1,38 @@
-import { useState } from "react";
-import { Text, HrefLink } from "../../library";
+// import { Button } from "../../library";
 import { AllProjects } from "../../assets";
-import {
-  List,
-  Content,
-  Main,
-  Center,
-  MainTabs,
-  Tab,
-} from "./Project.styled";
+import { Main, Card, CardContent } from "./Project.styled";
+import { Text,Pill } from "../../library";
 
 export const Project = () => {
-  const [activeTab, setActiveTab] = useState(0);
-  const handleTabClick = (index) => {
-    setActiveTab(index);
-  };
-
   return (
     <Main id="project">
-      <Text family="VT323" font="title" weight="500" margin_bottom="20px">
+      <Text font="lg" family="VT323" weight="500">
         Some Things I’ve Built
       </Text>
-      <MainTabs>
-        <List>
-          {AllProjects.map((tab, index) => (
-            <Tab
-              active={index === activeTab ?? true}
-              key={index}
-              onClick={() => handleTabClick(index)}
-            >
-              {tab.name}
-            </Tab>
-          ))}
-        </List>
-        <Content>
-          <Text font="mdtitle" family="VT323">
-            {AllProjects[activeTab]?.title}
-          </Text>
-          <ul>
-            <li>{AllProjects[activeTab]?.goal}</li>
-            <li>{AllProjects[activeTab]?.tech}</li>
-            <li>{AllProjects[activeTab]?.detail}</li>
-          </ul>
 
-          {/* <HrefLink
-            textColor="green"
-            target="_blank"
-            href={AllProjects[activeTab]?.link}
-          >
-            {AllProjects[activeTab]?.link}
-          </HrefLink> */}
-        </Content>
-      </MainTabs>
-      <Center>
-        <HrefLink textColor="green" target="_blank">
+      <div>
+        <Card>
+          {AllProjects.map((project) => (
+            <CardContent key={project.id}>
+              <img
+                src="https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17-1024x615.jpg"
+                alt="project image"
+              />
+              <Text color="light" margin_top="10px" weight="500" font="text" family="poppins">
+                {project.title}
+              </Text>
+                {project.tech.map((stack, index) => (
+                  <Pill key={index}>{stack}</Pill>
+                ))}
+            </CardContent>
+          ))}
+        </Card>
+      </div>
+      <div>
+        {/* <Button>
           see full archive
-        </HrefLink>
-      </Center>
+        </Button> */}
+      </div>
     </Main>
   );
 };

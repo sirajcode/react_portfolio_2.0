@@ -1,33 +1,50 @@
 import styled from "styled-components";
-import { color } from "../../assets";
+import { color, radius } from "../../assets";
 export const AboutMain = styled.div`
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 `;
 
 export const AboutSection = styled.div`
   display: flex;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 `;
 export const AboutContent = styled.div`
   width: 60%;
+  @media screen and (max-width: 768px) {
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 `;
 export const Profile = styled.div`
   margin-left: 50px;
   width: 40%;
+  @media screen and (max-width: 768px) {
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 `;
 export const Card = styled.div`
   padding: 30px;
-  background-color: ${color.Dark400};
-  border-radius: 20px;
+  background-color: ${color.dark};
+  border-radius: ${radius.round};
   text-align: center;
   border: 1px solid transparent;
-
-  :hover {
-    border: 1px solid ${color.Dark50};
-  }
+  /* :hover {
+    border: 1px solid ${color.light};
+  } */
 `;
 export const CardContent = styled.div`
   img {
@@ -40,5 +57,5 @@ export const CardContent = styled.div`
   }
 `;
 export const Tags = styled.div`
-  margin-top: 26px;
+  margin-top: 20px;
 `;
