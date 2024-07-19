@@ -1,32 +1,40 @@
 import styled from "styled-components";
-import { color } from "../../assets";
+import { color, radius } from "../../assets";
 
 export const ContactContainer = styled.div`
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top:60px;
+  margin-bottom: 60px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: normal;
+  }
 `;
 export const Content = styled.div`
   width: 40%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const ContactIcons = styled.div`
   display: flex;
   align-items: center;
-  width: 50%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const ContactBtn = styled.div`
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 8px 8px 2px 8px;
   margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${color.Dark400};
-  border-radius: 0.56rem;
-  border: 1px solid transparent;
-  :hover {
-    border: 1px solid;
-    border-color: ${color.Dark50};
+  background-color: ${color.dark};
+  border-radius:${radius.round};
+  a{
+    color: ${color.light};
   }
 `;
