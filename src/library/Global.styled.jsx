@@ -7,7 +7,6 @@ export const GlobalStyle = createGlobalStyle`
 body,h1,h2,h3,h4,h5,figure,picture,p,div,a{margin: 0;padding: 0; }
 /* ! setting up body */
 body{line-height: 1.5; min-height: 100vh;color:${color.dark};background-color:${color.light};} 
-/* color:#ffffff;background-color:#262626; */
 
 /* ! pictures and images */
 img,picture{max-width:100%;display: block;}

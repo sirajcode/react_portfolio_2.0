@@ -14,7 +14,7 @@ const dark = `
 export const Button = styled.button`
   font-size: ${textSize.button};
   font-weight: 500;
-  padding: 6px 16px;
+  padding: 6px 14px;
   cursor: pointer;
   border: none;
   border-radius: ${radius.round};

@@ -10,7 +10,9 @@ const FontSize = (p) => {
   }
 };
 
-const TextColor = (p) => {
+
+
+const Color = (p) => {
   const text = p.color;
   for (const pro in color) {
     if (text === pro) {
@@ -36,7 +38,7 @@ export const Text = styled.p`
   padding-left: ${(p) => p.padding_left};
   padding-right: ${(p) => p.padding_right};
   font-size: ${FontSize};
-  color: ${TextColor};
+  color: ${Color};
 `;
 
 export const Line = styled.p`
