@@ -11,7 +11,7 @@ const FontSize = (p) => {
 };
 
 const TextColor = (p) => {
-  const text = p.textColor;
+  const text = p.color;
   for (const pro in color) {
     if (text === pro) {
       return color[pro];
