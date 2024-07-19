@@ -8,6 +8,7 @@ import { BiLogoFlask, BiLogoTypescript } from "react-icons/bi";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BiLogoGmail } from "react-icons/bi";
 import { BiSolidPhoneCall } from "react-icons/bi";
+import { RiLinkedinFill } from "react-icons/ri";
 
 const icon = css`
   width: 25px;
@@ -27,7 +28,7 @@ export const Phone = styled(BiSolidPhoneCall)`
 export const Mail = styled(BiLogoGmail)`
   ${icon}
 `;
-export const LinkIcon = styled(SiFastapi)`
+export const LinkIcon = styled(RiLinkedinFill)`
   ${icon}
 `;
 
