@@ -24,7 +24,7 @@ export const About = () => {
     <AboutMain>
       <AboutSection>
         <AboutContent>
-          <Text font="lg" family="VT323" weight="500">
+          <Text font="mdtitle" family="Inter" weight="600">
             Hi, i am Siraj
           </Text>
           {aboutme.map((data) => (
@@ -40,9 +40,9 @@ export const About = () => {
               <Text
                 margin_top="20px"
                 align="center"
-                family="VT323"
-                font="mdtitle"
-                weight="500"
+                family="Inter"
+                font="smtitle"
+                weight="600"
                 color="light"
               >
                 M. Siraj

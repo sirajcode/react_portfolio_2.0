@@ -23,7 +23,7 @@ const skillIcons = [
 export const Skill = () => {
   return (
     <>
-      <Text font="mdtitle" family="VT323" weight="300" margin_bottom="10px">
+      <Text font="smtitle" family="Inter" weight="600" margin_bottom="10px">
         Tech stack
       </Text>
       <Skills>

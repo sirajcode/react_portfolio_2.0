@@ -1,5 +1,5 @@
-import { Navigation } from "./Nav.styled";
-import { Button,Text } from "../../library";
+import { Navigation, Navabar } from "./Nav.styled";
+import { Text } from "../../library";
 export const Nav = () => {
   const resume = "this is my resume";
   const scrollToSection = () => {
@@ -10,16 +10,20 @@ export const Nav = () => {
     <>
       <Navigation>
         <nav>
-          <Text family="VT323" font="smtitle" weight="500">
+          <Text family="Inter" font="smtitle" weight="600">
             {"<siraj.code/>"}
           </Text>
           <Text font="VT323"> </Text>
         </nav>
-        <nav>
-          <Button  dark download="" href={resume}>
-            Project | Resume | Contact
-          </Button>
-        </nav>
+        <Navabar>
+            <a href="/">
+              Projects
+            </a>{" "}
+            |{" "}
+            <a href={resume} download="">
+              Resume
+            </a>
+        </Navabar>
       </Navigation>
     </>
   );

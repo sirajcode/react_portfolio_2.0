@@ -14,16 +14,12 @@ export const Card = styled.div`
   grid-gap: 10px;
   margin-top: 10px;
 `;
-export const CardContent = styled.div`
-  
+export const CardContent = styled.a`
   padding: 8px;
   border: 1px solid white;
   background-color: ${color.dark};
   border-radius: ${radius.round};
-  border: 1px solid transparent;
-  /* :hover {
-    border: 1px solid ${color.light};
-  } */
+  cursor: pointer;
   img {
     border-radius: calc(${radius.round} - 5px);
   }
