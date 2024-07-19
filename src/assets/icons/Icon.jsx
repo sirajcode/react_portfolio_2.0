@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { css } from "styled-components";
 import { FaPython } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa6";
@@ -9,54 +9,52 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { BiLogoGmail } from "react-icons/bi";
 import { BiSolidPhoneCall } from "react-icons/bi";
 
-const icon = {
-  size: "25px",
-};
+const icon = css`
+  width: 25px;
+  height: 25px;
+  @media screen and (max-width: 768px) {
+    height: 18px;
+    width: 18px;
+  }
+`;
 //contact icons
 export const Whatsapp = styled(IoLogoWhatsapp)`
-  width: ${icon.size};
-  height: ${icon.size};
+  ${icon}
 `;
 export const Phone = styled(BiSolidPhoneCall)`
-  width: ${icon.size};
-  height: ${icon.size};
+  ${icon}
 `;
 export const Mail = styled(BiLogoGmail)`
-  width: ${icon.size};
-  height: ${icon.size};
+  ${icon}
 `;
+export const LinkIcon = styled(SiFastapi)`
+  ${icon}
+`;
+
 
 //stack icons
 export const JsIcon = styled(RiJavascriptFill)`
-  width: ${icon.size};
-  height: ${icon.size};
+  ${icon}
 `;
 export const TypeIcon = styled(BiLogoTypescript)`
-  width: ${icon.size};
-  height: ${icon.size};
+  ${icon}
 `;
 export const ReIcon = styled(FaReact)`
-  width: ${icon.size};
-  height: ${icon.size};
+  ${icon}
 `;
 export const NextIcon = styled(TbBrandNextjs)`
-  width: ${icon.size};
-  height: ${icon.size};
+  ${icon}
 `;
 //backend
 export const PyIcon = styled(FaPython)`
-  width: ${icon.size};
-  height: ${icon.size};
+  ${icon}
 `;
 export const DjIcon = styled(SiDjango)`
-  width: ${icon.size};
-  height: ${icon.size};
+  ${icon}
 `;
 export const FlaskIcon = styled(BiLogoFlask)`
-  width: ${icon.size};
-  height: ${icon.size};
+  ${icon}
 `;
 export const FastIcon = styled(SiFastapi)`
-  width: ${icon.size};
-  height: ${icon.size};
+  ${icon}
 `;
