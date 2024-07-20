@@ -16,13 +16,10 @@ export const Nav = () => {
           <Text font="VT323"> </Text>
         </nav>
         <Navabar>
-            <a href="/">
-              Projects
-            </a>{" "}
-            |{" "}
-            <a href={resume} download="">
-              Resume
-            </a>
+          <a href="#project">Projects</a> |{" "}
+          <a href={resume} download="">
+            Resume
+          </a>
         </Navabar>
       </Navigation>
     </>

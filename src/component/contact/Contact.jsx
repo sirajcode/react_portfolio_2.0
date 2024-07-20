@@ -8,7 +8,12 @@ import { Text, HrefLink } from "../../library";
 import { Whatsapp, Mail, Phone, LinkIcon } from "../../assets";
 export const Contact = () => {
   const contactIcons = [
-    { id: 1, icon: <LinkIcon />, link: "Linkedin Linkhere", blank: "_blank" },
+    {
+      id: 1,
+      icon: <LinkIcon />,
+      link: "https://www.linkedin.com/in/sirajcodes/",
+      blank: "_blank",
+    },
     { id: 2, icon: <Mail />, link: "mailto:sirajatdesk@gmail.com", blank: "" },
     {
       id: 3,

@@ -32,9 +32,10 @@ export const ContactBtn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${color.dark};
-  border-radius:${radius.round};
-  a{
+  border-radius: ${radius.round};
+  background: rgba(150, 150, 150, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  a {
     color: ${color.light};
   }
 `;

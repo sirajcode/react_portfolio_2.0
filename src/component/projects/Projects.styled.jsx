@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { color, radius, textSize } from "../../assets";
+import styled from "styled-components";
+import { radius } from "../../assets";
 
 export const Main = styled.div`
   display: flex;
@@ -17,9 +17,12 @@ export const Card = styled.div`
 export const CardContent = styled.a`
   padding: 8px;
   border: 1px solid white;
-  background-color: ${color.dark};
   border-radius: ${radius.round};
   cursor: pointer;
+
+  background: rgba(150, 150, 150, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
   img {
     border-radius: calc(${radius.round} - 5px);
   }

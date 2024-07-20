@@ -9,7 +9,7 @@ import {
   AboutMain,
 } from "./About.styled";
 import { Skill } from "../skills/Skill";
-import { PngImage } from "../../assets";
+import { SirajImg } from "../../assets";
 
 
 const aboutme = [
@@ -36,7 +36,7 @@ export const About = () => {
         <Profile>
           <Card>
             <CardContent>
-              <img src={PngImage} alt="" />
+              <img src={SirajImg} alt="siraj's Photo" />
               <Text
                 margin_top="20px"
                 align="center"
@@ -51,7 +51,7 @@ export const About = () => {
                 align="center"
                 family="Inter"
                 font="button"
-                weight="300"
+                weight="400"
                 color="light"
               >
                 Full-stack web developer

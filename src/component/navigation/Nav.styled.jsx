@@ -16,6 +16,9 @@ export const Navabar = styled.div`
   border-radius: ${radius.round};
   font-size: ${textSize.button};
   font-weight: 700;
+
+  background: rgba(150, 150, 150, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   a {
     color: ${color.light};
     font-weight: 400;

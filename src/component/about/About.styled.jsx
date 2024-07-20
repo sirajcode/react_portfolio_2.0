@@ -38,13 +38,10 @@ export const Profile = styled.div`
 `;
 export const Card = styled.div`
   padding: 30px;
-  background-color: ${color.dark};
   border-radius: ${radius.round};
   text-align: center;
-  border: 1px solid transparent;
-  /* :hover {
-    border: 1px solid ${color.light};
-  } */
+  background: rgba(150, 150, 150, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 `;
 export const CardContent = styled.div`
   img {
