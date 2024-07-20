@@ -1,4 +1,4 @@
-import { About, Header, Nav, Project, Skill, Contact } from "../../component";
+import { About, Nav, Projects, Contact } from "../../component";
 import { Container } from "./Home.styled";
 
 export const HomePage = () => {
@@ -7,7 +7,7 @@ export const HomePage = () => {
       <Container>
         <Nav />
         <About />
-        <Project />
+        <Projects />
         <Contact />
       </Container>
     </>
