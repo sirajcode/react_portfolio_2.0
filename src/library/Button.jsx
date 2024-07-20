@@ -24,6 +24,8 @@ export const Button = styled.button`
   margin-bottom: ${(p) => p.margin_bottom};
   margin-left: ${(p) => p.margin_left};
   margin-right: ${(p) => p.margin_right};
+  text-align: ${(p) => p.align};
+  
   font-family: Inter;
   ${(p) => {
     if (p.light) return `${light}`;
@@ -43,10 +45,8 @@ export const Pill = styled.button`
   border: none;
   border-radius: ${radius.round};
   font-family: Inter;
-  ${(p) => {
-    if (p.dark) return `${dark}`;
-  }}
-  ${(p) => {
-    if (p.light) return `${light}`;
-  }}
+  background: rgba(150, 150, 150, 0.3);
+  /* background: rgba(150, 150, 150, 0.1); */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: ${color.light};
 `;
