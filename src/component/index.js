@@ -4,4 +4,5 @@ export { Skill } from './skills/Skill';
 export { About } from './about/About';
 export { Header } from './header/Header';
 export { Nav } from "./navigation/Nav";
+export {Detail} from "./detail/Detail"
 

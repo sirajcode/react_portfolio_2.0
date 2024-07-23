@@ -49,7 +49,6 @@ export const CardContent = styled.div`
     width: 50%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    background: blue;
     border-radius: 50%;
   }
 `;

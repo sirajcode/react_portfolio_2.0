@@ -1,5 +1,6 @@
 import { Navigation, Navabar } from "./Nav.styled";
 import { Text } from "../../library";
+import { Link } from "react-router-dom";
 export const Nav = () => {
   const resume = "this is my resume";
   const scrollToSection = () => {
@@ -10,9 +11,10 @@ export const Nav = () => {
     <>
       <Navigation>
         <nav>
-          <Text family="Inter" font="smtitle" weight="600">
-            {"<siraj.code/>"}
+          <Text family="Inter" font="text" weight="600">
+            <Link to="/">{"<siraj.code/>"}</Link>
           </Text>
+
           <Text font="VT323"> </Text>
         </nav>
         <Navabar>

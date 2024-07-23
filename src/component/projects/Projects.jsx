@@ -2,8 +2,13 @@
 import { AllProjects } from "../../assets";
 import { Main, Card, CardContent } from "./Projects.styled";
 import { Text, Pill } from "../../library";
+import { useNavigate } from "react-router-dom";
 
 export const Projects = () => {
+  const navigate = useNavigate();
+  const goToPage = (project) => {
+    navigate(`/project/${project.id}`, { state: { project } });
+  };
   return (
     <Main id="project">
       <Text font="mdtitle" family="Inter" weight="600">
@@ -13,11 +18,12 @@ export const Projects = () => {
       <div>
         <Card>
           {AllProjects.map((project) => (
-            <CardContent key={project.id} href={project.link} target="_blank">
-              <img
-                src="https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17-1024x615.jpg"
-                alt="project image"
-              />
+            <CardContent
+              key={project.id}
+              onClick={() => goToPage(project)}
+              target="_blank"
+            >
+              <img src={project.image} alt={project.title} />
               <Text
                 color="light"
                 margin_top="10px"
