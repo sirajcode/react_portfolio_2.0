@@ -2,7 +2,6 @@ import { Text } from "../../library";
 import {  Skills, Stack } from "./Skill.styled";
 import {
   JsIcon,
-  TypeIcon,
   ReIcon,
   NextIcon,
   PyIcon,
@@ -12,7 +11,6 @@ import {
 
 const skillIcons = [
   { id: 1, icon: <JsIcon /> },
-  { id: 2, icon: <TypeIcon /> },
   { id: 3, icon: <ReIcon /> },
   { id: 4, icon: <NextIcon /> },
   { id: 5, icon: <PyIcon /> },
