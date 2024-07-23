@@ -1,8 +1,9 @@
 export { color, radius, textSize } from './data/variable';
-export { SelectedProjects, AllProjects } from './data/Projects'
+export { AllProjects } from './data/Projects'
 
-export { JsIcon, TypeIcon, ReIcon, NextIcon, PyIcon, DjIcon, FlaskIcon, FastIcon, Phone, Mail, Whatsapp,LinkIcon } from "./icons/Icon"
+export { JsIcon, TypeIcon, ReIcon, NextIcon, PyIcon, DjIcon, FlaskIcon, FastIcon, Phone, Mail, Whatsapp, LinkIcon } from "./icons/Icon"
 
-import SirajImg from '../assets/siraj.png' 
+import SirajImg from './image/siraj.png';
 
-export { SirajImg }
+
+export { SirajImg}
