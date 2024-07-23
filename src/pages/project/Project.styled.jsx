@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { MdArrowOutward } from "react-icons/md";
+import { radius } from "../../assets";
 
 export const HeadContainer = styled.div`
   margin: 3% 3% 0% 3%;
